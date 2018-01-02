@@ -37,7 +37,7 @@ public class RailwayService {
         });
     }
 
-    // Checks whether trainDeparture time is between specified timeAfter and timeAfter + 6 hours
+    // Checks whether trainDeparture time is between specified timeAfter and timeAfter+hoursAfter
     protected static Boolean isBetweenTimeframe(LocalTime trainDeparture, LocalTime timeAfter,
                                                 int hoursAfter){
         Boolean isBetweenTimeframe = ((!trainDeparture.isBefore(timeAfter)
@@ -50,15 +50,27 @@ public class RailwayService {
     }
 
     public static void printTrainsFromTo(String fromStation, String toStation){
-        Map<Train, Map<Station, LocalTime[]>> resultTrains = new TreeMap<>();
+        Map<Train, Map<Station, LocalTime[]>> trains = getTrainsFromTo(fromStation, toStation);
+        trains.forEach((train, stationsAndTime) -> {
+            System.out.println("Train " + train.getId() + " \"" + train.getRoute() + "\"");
+            stationsAndTime.forEach((station, time) -> {
+                System.out.println(station.getName() + ". Arrival: " + time[0].toString()
+                        + ", Departure: " + time[1].toString());
+            });
+            System.out.println();
+        });
+    }
+
+    private static Map<Train, Map<Station, LocalTime[]>> getTrainsFromTo(String fromStation, String toStation){
+        Map<Train, Map<Station, LocalTime[]>> resultTrains = new TreeMap<>(); // Found trains will be located here
         Iterator<Map.Entry<String, Train>> trainIterator = trains.entrySet().iterator();
         while(trainIterator.hasNext()){
             Train train = trainIterator.next().getValue();
             Map<Station, LocalTime[]> stops = train.getStops();
+            Map<Station, LocalTime[]> resultStationsAndTime = new LinkedHashMap<>(); // Temporal Map for found, firstly, arrival time and station and, secondly, departure ones
+            Iterator<Map.Entry<Station, LocalTime[]>> stopsIterator = stops.entrySet().iterator();
             boolean foundFrom = false;
             boolean foundTo = false;
-            Map<Station, LocalTime[]> resultStationsAndTime = new LinkedHashMap<>();
-            Iterator<Map.Entry<Station, LocalTime[]>> stopsIterator = stops.entrySet().iterator();
             while(stopsIterator.hasNext() && !foundTo){
                 Map.Entry<Station, LocalTime[]> stopEntry = stopsIterator.next();
                 if(!foundFrom){
@@ -75,13 +87,6 @@ public class RailwayService {
                 }
             }
         }
-        resultTrains.forEach((train, stationsAndTime) -> {
-            System.out.println("Train " + train.getId() + " \"" + train.getRoute() + "\"");
-            stationsAndTime.forEach((station, time) -> {
-                System.out.println(station.getName() + ". Arrival: " + time[0].toString()
-                + ", Departure: " + time[1].toString());
-            });
-            System.out.println();
-        });
+        return resultTrains;
     }
 }

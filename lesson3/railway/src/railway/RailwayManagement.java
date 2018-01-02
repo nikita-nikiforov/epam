@@ -1,7 +1,7 @@
-package Railway;
+package railway;
 
-import Entities.Station;
-import Entities.Train;
+import entities.Station;
+import entities.Train;
 import java.util.HashMap;
 import java.util.Map;
 

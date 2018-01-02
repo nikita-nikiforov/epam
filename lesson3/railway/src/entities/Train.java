@@ -1,6 +1,6 @@
-package Entities;
+package entities;
 
-import Railway.RailwayManagement;
+import railway.RailwayManagement;
 import java.time.LocalTime;
 import java.util.*;
 

@@ -1,6 +1,6 @@
-import Entities.Train;
-import Railway.RailwayManagement;
-import Railway.RailwayService;
+import entities.Train;
+import railway.RailwayManagement;
+import railway.RailwayService;
 
 public class Main {
 
@@ -19,9 +19,9 @@ public class Main {
                 "22:48", "23:30").addStop("Lviv",
                 "08:10","08:50").build();
 
-        RailwayService.printNextTrainsOnStation("Odesa");
+//        RailwayService.printAllNextTrainsOnStation("Odesa");
         System.out.println();
-//        RailwayService.printTrainsFromTo("Zhmerynka", "Lviv");
-        RailwayService.printNextTrainsOnStationAfter("Lviv", "06:00");
+        RailwayService.printTrainsFromTo("Zhmerynka", "Lviv");
+//        RailwayService.printNextTrainsOnStationWithinSixHoursAfter("Zhmerynka", "22:00");
     }
 }

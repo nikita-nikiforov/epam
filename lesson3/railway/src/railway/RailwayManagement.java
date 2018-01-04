@@ -30,4 +30,9 @@ public class RailwayManagement {
     public static void addTrain(Train train){
         trains.put(train.getId(), train);
     }
+
+    protected static Train getTrainById(String trainId){
+        if(trains.containsKey(trainId)) return trains.get(trainId);
+        else return null;
+    }
 }

@@ -5,50 +5,37 @@ import java.time.LocalTime;
 import java.util.*;
 
 public class Train implements Comparable<Train>{
-    private String id;
-    private String route;
-    private Map<Station, LocalTime[]> stops = new LinkedHashMap<>();
-    private int[] places = new int[100];
-
-    public Train(String id) {
-        this.id = id;
-    }
+    private String id;                  // i.e. "705Ш"
+    private String route;               // start-end points, i.e. "Lviv – Odesa"
+    private Map<Station, LocalTime[]> stops = new LinkedHashMap<>(); // LocalTime[] has [0] as arrival time and [1] as departure time
+    private Map<Integer, List<Ticket>> places = new HashMap<>();
 
     public Train(Builder builder){
         id = builder.id;
         route = builder.route;
         stops = builder.stops;
+        places = builder.places;
         addTrainToStationsSchedule();
         addTrainToTrainList();
-    }
-
-    @Override
-    public int compareTo(Train train) {
-        Iterator<Map.Entry<Station, LocalTime[]>> stopsIterator = stops.entrySet().iterator();
-        while(stopsIterator.hasNext()){
-            Station station = stopsIterator.next().getKey();
-            if(train.getStops().containsKey(station)){
-                if(this.getStops().get(station)[0].isBefore(train.getStops().get(station)[0])){
-                    return -1;
-                }
-            }
-        }
-        return 0;
     }
 
     public static class Builder{
         private String id;
         private String route;
         private Map<Station, LocalTime[]> stops = new LinkedHashMap<>();
+        private Map<Integer, List<Ticket>> places = new HashMap<>();
 
-        public Builder(String id){
+        public Builder(String id, int placesAmount){
             this.id = id;
+            for(int placeNumber=1; placeNumber<=placesAmount; placeNumber++){
+                places.put(placeNumber, new ArrayList<Ticket>());
+            }
         }
 
         public Builder addStop(String stationName, String arrivalTime, String departureTime){
             Station station = RailwayManagement.getStationByName(stationName);
             if(station==null){
-                System.out.println("Can't find the station");
+                System.out.println("Can't find the station" + stationName);
                 // TODO
                 return null;
             }
@@ -91,12 +78,15 @@ public class Train implements Comparable<Train>{
         return route;
     }
 
+    public Map<Integer, List<Ticket>> getPlaces() {
+        return places;
+    }
+
     @Override
     public String toString() {
         return "Train{" +
                 "id='" + id + '\'' +
                 ", stops=" + stops +
-                ", places=" + Arrays.toString(places) +
                 '}';
     }
 
@@ -111,4 +101,17 @@ public class Train implements Comparable<Train>{
         RailwayManagement.addTrain(this);
     }
 
+    @Override
+    public int compareTo(Train train) {
+        Iterator<Map.Entry<Station, LocalTime[]>> stopsIterator = stops.entrySet().iterator();
+        while(stopsIterator.hasNext()){
+            Station station = stopsIterator.next().getKey();
+            if(train.getStops().containsKey(station)){
+                if(this.getStops().get(station)[0].isBefore(train.getStops().get(station)[0])){
+                    return -1;
+                }
+            }
+        }
+        return 0;
+    }
 }

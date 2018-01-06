@@ -7,7 +7,7 @@ import java.util.TreeMap;
 
 public class Station {
     private String name;
-    protected Map<Train, LocalTime[]> nextTrains = new HashMap<>(); // TODO treemap
+    protected Map<Train, LocalTime[]> nextTrains = new TreeMap<>(); // TODO treemap
 
     public Station(String name) {
         this.name = name;

@@ -38,6 +38,7 @@ public class Train implements Comparable<Train>{
                 System.out.println("Can't find the station" + stationName);
                 // TODO
                 return null;
+
             }
             LocalTime arrivalLocalTime = LocalTime.parse(arrivalTime);
             LocalTime departureLocalTime = LocalTime.parse(departureTime);

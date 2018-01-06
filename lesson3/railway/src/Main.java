@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         RailwayManagement.addStations("Kharkiv", "Kyiv", "Odesa", "Podilsk",
-                "Lviv", "Ternopil", "Zhmerynka");
+                "Lviv", "Ternopil", "Zhmerynka", "Akkarzha", "Zatoka", "Bilhorod-Dnistrovskyi");
 
         Train odesaLviv = new Train.Builder("206Ш", 25)
                 .addStop("Odesa", "18:10", "18:26")
@@ -22,21 +22,27 @@ public class Main {
                 .addStop("Lviv", "08:10","08:50")
                 .build();
 
-//        RailwayService.printAllNextTrainsOnStation("Odesa");
-        System.out.println();
-        RailwayService.printTrainsFromTo("Zhmerynka", "Lviv");
-//        RailwayService.printNextTrainsOnStationWithinSixHoursAfter("Zhmerynka", "22:00");
+        Train odesaBilhorod = new Train.Builder("250А", 25)
+                .addStop("Odesa", "10:08", "10:30")
+                .addStop("Akkarzha", "11:18", "11:26")
+                .addStop("Zatoka", "12:07", "12:18")
+                .addStop("Bilhorod-Dnistrovskyi", "13:25","14:10")
+                .build();
 
-        RailwayService.buyTicket("Nikita Nikiforov", "709П", 7,
-                "Kharkiv", "Kyiv");
-        RailwayService.buyTicket("Nikita Nikiforov", "709П", 7,
-                "Kyiv", "Zhmerynka");
-        RailwayService.buyTicket("Nikita Nikiforov", "709П", 7,
-                "Kyiv", "Lviv");
-        RailwayService.buyTicket("Nikita Nikiforov", "206Ш", 7,
-                "Zhmerynka", "Lviv");
-        RailwayService.buyTicket("Nikita Nikiforov", "206Ш", 7,
-                "Odesa", "Podilsk");
+        RailwayService.printAllNextTrainsOnStation("Zhmerynka");
+//        RailwayService.printTrainsFromTo("Zhmerynka", "Lviv");
+//        RailwayService.printNextTrainsOnStationWithinSixHoursAfter("Zhmerynka", "22:00");
+//
+//        RailwayService.buyTicket("Nikita Nikiforov", "709П", 7,
+//                "Kharkiv", "Kyiv");         // OK
+//        RailwayService.buyTicket("Nikita Nikiforov", "709П", 7,
+//                "Kyiv", "Zhmerynka");       // OK
+//        RailwayService.buyTicket("Nikita Nikiforov", "709П", 7,
+//                "Kyiv", "Lviv");        // Won't buy, because place is reserved
+//        RailwayService.buyTicket("Nikita Nikiforov", "206Ш", 25,
+//                "Zhmerynka", "Lviv");       //OK
+//        RailwayService.buyTicket("Nikita Nikiforov", "206Ш", 25,
+//                "Odesa", "Podilsk");        //OK
 
     }
 }

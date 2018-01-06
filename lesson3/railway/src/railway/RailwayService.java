@@ -17,36 +17,41 @@ public class RailwayService {
     }
 
     public static void printAllNextTrainsOnStation(String stationName){
+        System.out.println("All trains on station " + stationName + ":");
         printNextTrainsOnStationAfter(stationName, "00:00", 24);
     }
 
-    private static void printNextTrainsOnStationAfter(String stationName, String timeAfterStr,
+    private static void printNextTrainsOnStationAfter(String stationName, String timeAfter,
                                                      int hoursAfter){
         Station station = getStationByName(stationName);
         if(station==null){
             System.out.println("Can't find the station.");
             return;
-        } else if(!timeAfterStr.matches("([01]?[0-9]|2[0-3]):[0-5][0-9]")){
+        } else if(!timeAfter.matches("([01]?[0-9]|2[0-3]):[0-5][0-9]")){
             System.out.println("Wrong time format.");
             return;
         }
-        LocalTime timeAfter = LocalTime.parse(timeAfterStr);
+
+        LocalTime parsedTimeAfter = LocalTime.parse(timeAfter);
         station.getNextTrains().forEach((train, times) -> {
-            if(isBetweenTimeframe(times[1], timeAfter, hoursAfter) || hoursAfter==24){
+            if(isBetweenTimeframe(times[1], parsedTimeAfter, hoursAfter)){
                 System.out.println("Train " + train.getId() + " \"" + train.getRoute()
                         + "\". Arrival: " + times[0].toString()
                         + ", Departure: " + times[1].toString());
             }
         });
+        System.out.println();
     }
 
     // Checks whether trainDeparture time is between specified timeAfter and timeAfter+hoursAfter
     protected static Boolean isBetweenTimeframe(LocalTime trainDeparture, LocalTime timeAfter,
                                                 int hoursAfter){
+        if(hoursAfter==24) return true;             // for printAllNextTrainsOnStation()
+        LocalTime timeBefore = timeAfter.plusHours(hoursAfter);
         Boolean isBetweenTimeframe = ((!trainDeparture.isBefore(timeAfter)
-                    && (trainDeparture.isBefore(timeAfter.plusHours(hoursAfter)))));
-        if(timeAfter.isAfter(timeAfter.plusHours(hoursAfter))){ // If the timeframe crosses
-            return !isBetweenTimeframe;                         // midnight (i.e. 22:00 — 04:00)
+                    && (trainDeparture.isBefore(timeBefore))));
+        if(timeAfter.isAfter(timeBefore)){              // If the timeframe crosses
+            return !isBetweenTimeframe;                 // midnight (i.e. 22:00 — 04:00)
         } else {
             return isBetweenTimeframe;
         }
@@ -54,10 +59,13 @@ public class RailwayService {
 
     public static void printTrainsFromTo(String fromStation, String toStation){
         Map<Train, Map<Station, LocalTime[]>> trains = getTrainsFromTo(fromStation, toStation);
+        if(trains.isEmpty()) System.out.println("There's no trains from " + fromStation
+                            + " to " + toStation);
+        else System.out.println("All trains from " + fromStation + " to " + toStation + ":");
         trains.forEach((train, stationsAndTime) -> {
-            System.out.println("Train " + train.getId() + " \"" + train.getRoute() + "\"");
+            System.out.println("-- Train " + train.getId() + " \"" + train.getRoute() + "\"");
             stationsAndTime.forEach((station, time) -> {
-                System.out.println(station.getName() + ". Arrival: " + time[0].toString()
+                System.out.println("---- " + station.getName() + ". Arrival: " + time[0].toString()
                         + ", Departure: " + time[1].toString());
             });
             System.out.println();
@@ -77,12 +85,12 @@ public class RailwayService {
             while(stopsIterator.hasNext() && !foundTo){
                 Map.Entry<Station, LocalTime[]> stopEntry = stopsIterator.next();
                 if(!foundFrom){
-                    if(stopEntry.getKey().getName().equalsIgnoreCase(fromStation)) {
+                    if(stopEntry.getKey().getName().equals(fromStation)) {
                         foundFrom = true;
                         resultStationsAndTime.put(stopEntry.getKey(), stopEntry.getValue());
                     }
                 } else {
-                    if(stopEntry.getKey().getName().equalsIgnoreCase(toStation)){
+                    if(stopEntry.getKey().getName().equals(toStation)){
                         foundTo = true;
                         resultStationsAndTime.put(stopEntry.getKey(), stopEntry.getValue());
                         resultTrains.put(train, resultStationsAndTime);

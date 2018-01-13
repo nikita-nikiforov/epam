@@ -9,34 +9,43 @@ public class Main {
         burrowsWheeler();
     }
 
-    private static void deleteDoubleLetters(){
-        String resultString = "";
-        Scanner scanner = new Scanner(System.in);
+    public static void deleteDoubleLetters(){
+        String text = readTextFromConsole();
+        String textWithoutDoubleLetters = getTextWithDeletedDoubleLetters(text);
+        System.out.println(textWithoutDoubleLetters);
+    }
+
+    private static String getTextWithDeletedDoubleLetters(String text){
+        Scanner scanner = new Scanner(text);
+        StringBuilder resultString = new StringBuilder();
         while(scanner.hasNextLine()){
             String line = scanner.nextLine();
             char[] charArray = line.toCharArray();
-            String resultLine = String.valueOf(charArray[0]);
+
+            // Temporal string for the current line. Created with the first letter of text
+            StringBuilder resultLine = new StringBuilder(String.valueOf(charArray[0]));
             for(int i=1; i<charArray.length; i++){
-                if(charArray[i]!=resultLine.charAt(resultLine.length()-1)){
-                    resultLine += charArray[i];
-                }else{
-                    resultLine+= "___";
+                if(charArray[i]!=resultLine.charAt(resultLine.length()-1)){   // check for doubles
+                    resultLine.append(charArray[i]);
                 }
             }
-            resultString += resultLine + "\n";
+            resultString.append(resultLine + "\n");
         }
-        System.out.println(resultString);
+        return resultString.toString();
     }
 
     public static void alignToRight(){
         String text = readTextFromConsole();
+        // 80 is a width of the console line , 30 is a width of an aligned column
         String alignedString = getStringAlignedToRight(80, 30, text);
         System.out.println(alignedString);
     }
 
-    private static String getStringAlignedToRight(int consoleLineWidth, int alignedTextWidth, String text){
+    private static String getStringAlignedToRight(int consoleLineWidth, int alignedColumnWidth, String text){
         StringBuilder alignedText = new StringBuilder();
-        char[] whitespaces = new char[consoleLineWidth-alignedTextWidth];
+
+        // fixed whitespaces before every line of aligned column
+        char[] whitespaces = new char[consoleLineWidth-alignedColumnWidth];
         Arrays.fill(whitespaces, ' ');
 
         Scanner textScanner = new Scanner(text);
@@ -44,10 +53,10 @@ public class Main {
         StringBuilder alignedLine = new StringBuilder();
         while(textScanner.hasNext()){
             String word = textScanner.next();
-            if(alignedLine.length()+word.length() < alignedTextWidth){
+            if(alignedLine.length()+word.length() < alignedColumnWidth){
                 alignedLine.append(word + " ");
             }else{
-                char[] alignedLineWhitespaces = new char[alignedTextWidth-alignedLine.length()];
+                char[] alignedLineWhitespaces = new char[alignedColumnWidth-alignedLine.length()];
                 Arrays.fill(alignedLineWhitespaces, ' ');
                 alignedText.append(whitespaces).append(alignedLineWhitespaces)
                         .append(alignedLine + "\n");
@@ -55,21 +64,12 @@ public class Main {
                 alignedLine.append(word + " ");
             }
         }
-        char[] alignedLineWhitespaces = new char[alignedTextWidth-alignedLine.length()];
+        // TODO remove double code
+        char[] alignedLineWhitespaces = new char[alignedColumnWidth-alignedLine.length()];
         Arrays.fill(alignedLineWhitespaces, ' ');
         alignedText.append(whitespaces).append(alignedLineWhitespaces).append(alignedLine);
 
         return alignedText.toString();
-    }
-
-    private static String readTextFromConsole(){
-        StringBuilder text = new StringBuilder("");
-        Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNextLine()){
-            String line = scanner.nextLine();
-            text.append(line + " ");
-        }
-        return text.toString();
     }
 
     public static void burrowsWheeler(){
@@ -80,14 +80,18 @@ public class Main {
 
     private static String burrowsWheelerTransformation(String inputText){
         String text = inputText.trim();
-        String[] textRotations = new String[text.length()]; // All possible rotations of text
+        String[] textRotations = new String[text.length()]; //Array for all possible rotations of text
         textRotations[0] = text;
+
+        // Replace the last letter of the previous rotation
+        // to the beginning of current (ie. JAVA -> AJAV -> VAJA)
         for(int i = 1; i<text.length(); i++){
             String newRotation = textRotations[i-1].substring(text.length()-1)
                     + textRotations[i-1].substring(0, text.length()-1);
             textRotations[i] = newRotation;
         }
 
+        // Bubble sort of text rotations
         String temp;
         for(int i=0; i<textRotations.length; i++){
             for(int j=1; j<textRotations.length-i; j++){
@@ -99,11 +103,21 @@ public class Main {
             }
         }
 
-        StringBuilder resultString = new StringBuilder();
-
+        // Create a string of last characters of all sorted rotation
+        StringBuilder lastCharsOfRotations = new StringBuilder();
         for(String textRotation : textRotations){
-            resultString.append(textRotation.substring(text.length()-1));
+            lastCharsOfRotations.append(textRotation.substring(text.length()-1));
         }
-        return resultString.toString();
+        return lastCharsOfRotations.toString();
+    }
+
+    private static String readTextFromConsole(){
+        StringBuilder text = new StringBuilder();
+        Scanner scanner = new Scanner(System.in);
+        while (scanner.hasNextLine()){
+            String line = scanner.nextLine();
+            text.append(line + "\n");
+        }
+        return text.toString();
     }
 }

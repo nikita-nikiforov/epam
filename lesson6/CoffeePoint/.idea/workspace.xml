@@ -1,0 +1,1284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7a7f630c-67fb-412d-9902-f42ec2e2b0a3" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="CoffeePoint" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-419">
+              <caret line="27" column="68" lean-forward="false" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cashbox.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/equipment/Cashbox.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#312#313#0" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
+                <element signature="e#405#406#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegularCoffee.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/drink/menu/RegularCoffee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/coffeepoint/service/order/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
+                <element signature="e#643#644#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoffeeMachine.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/equipment/coffeemachine/CoffeeMachine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#6818#6819#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/coffeepoint/service/CustomerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Employee.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/employee/Employee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoffeePoint.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/coffeepoint/CoffeePoint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="120" column="33" lean-forward="false" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3022#3023#0" expanded="true" />
+                <element signature="e#3050#3051#0" expanded="true" />
+                <element signature="e#3190#3191#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/coffeepoint/service/order/OrderService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2121#2122#0" expanded="true" />
+                <element signature="e#2177#2178#0" expanded="true" />
+                <element signature="e#4303#4304#0" expanded="true" />
+                <element signature="e#4351#4352#0" expanded="true" />
+                <element signature="e#4404#4405#0" expanded="true" />
+                <element signature="e#4461#4462#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/coffeepoint/service/ProductService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cupo</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/coffeepoint/entity/product</dir>
+    </dirStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/Nameable.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/Priceable.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/drink/modes/Latte.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/drink/modes/RegularCoffee.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/drink/modes/HotChocolate.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/drink/modes/Espresso.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/drink/modes/Cappuccino.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/drink/modes/Americano.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/Order.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/service/Order.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/fastfood/menu/Sandwich.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/fastfood/Food.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/food/Food.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/food/menu/HotDog.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/food/menu/Sandwich.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/service/CoffeePointCustomerService.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/order/OrderService.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/exceptions/NotPainException.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/exceptions/NotPaidException.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/service/ManagementService.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/order/Order.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/BonusCard.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/service/BonusCardService.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/service/order/Order.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/Product.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/Bonusable.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/drink/menu/Latte.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/service/CustomerService.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/drink/menu/HotChocolate.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/service/bonuscard/BonusCard.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/food/Fastfood.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/equipment/grill/Grill.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/drink/Drink.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/drink/CupOfDrink.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/service/bonuscard/BonusCardService.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/drink/additive/Additivable.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/drink/additive/Chocolate.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/drink/additive/Milk.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/drink/additive/Cream.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/exceptions/NotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/Menu.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/product/drink/menu/RegularCoffee.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/equipment/coffeemachine/CoffeeMachine.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/employee/Employee.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/equipment/PaymentTerminal.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/CoffeePoint.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/service/order/OrderService.java" />
+        <option value="$PROJECT_DIR$/src/coffeepoint/entity/equipment/Cashbox.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="28" />
+    <option name="y" value="-42" />
+    <option name="width" value="1274" />
+    <option name="height" value="710" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CoffeePoint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoffeePoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoffeePoint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoffeePoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoffeePoint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoffeePoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="coffeepoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoffeePoint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoffeePoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="coffeepoint" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoffeePoint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoffeePoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="coffeepoint" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="equipment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoffeePoint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoffeePoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="coffeepoint" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoffeePoint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoffeePoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="coffeepoint" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="drink" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoffeePoint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoffeePoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="coffeepoint" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="drink" type="462c0819:PsiDirectoryNode" />
+              <item name="additive" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoffeePoint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoffeePoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="coffeepoint" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoffeePoint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoffeePoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="coffeepoint" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CoffeePoint" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoffeePoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="coffeepoint" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="SearchEverywhereHistoryKey" value="cupof&#9;PSI&#9;JAVA://coffeepoint.entity.product.drink.CupOfDrink&#10;getDrink&#9;PSI&#9;JAVA://coffeepoint.service.ProductService#getDrink" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/coffeepoint/entity" />
+      <recent name="$PROJECT_DIR$/src/coffeepoint/entity/product" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CoffeePoint" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a7f630c-67fb-412d-9902-f42ec2e2b0a3" name="Default" comment="" />
+      <created>1516374441551</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1516374441551</updated>
+      <workItem from="1516374445413" duration="22435000" />
+      <workItem from="1516446740111" duration="27461000" />
+      <workItem from="1516475698258" duration="158000" />
+      <workItem from="1516486226272" duration="1624000" />
+      <workItem from="1516534583490" duration="25334000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="77012000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1301" height="772" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.50269026" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.49730977" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22982322" sideWeight="0.49127182" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23059185" sideWeight="0.5087282" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4730539" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="165" y="96" width="1101" height="572" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23059185" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997006" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/coffeepoint/service/CustomerService.java</url>
+          <line>24</line>
+          <properties class="coffeepoint.service.CustomerService" method="makeOrder">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/coffeepoint/entity/employee/Employee.java</url>
+          <line>78</line>
+          <properties class="coffeepoint.entity.employee.Employee">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/coffeepoint/entity/equipment/PaymentTerminal.java</url>
+          <line>11</line>
+          <properties class="coffeepoint.entity.equipment.PaymentTerminal" method="makeTransaction">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/coffeepoint/service/bonuscard/BonusCard.java</url>
+          <line>11</line>
+          <properties class="coffeepoint.service.bonuscard.BonusCard" method="addBonuses">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/coffeepoint/entity/equipment/coffeemachine/CoffeeMachine.java</url>
+          <line>142</line>
+          <properties class="coffeepoint.entity.equipment.coffeemachine.CoffeeMachine" method="makeDrink">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/coffeepoint/entity/employee/Employee.java</url>
+          <line>52</line>
+          <properties class="coffeepoint.entity.employee.Employee" method="makeDrink">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/coffeepoint/entity/equipment/coffeemachine/CoffeeMachine.java</url>
+          <line>159</line>
+          <properties class="coffeepoint.entity.equipment.coffeemachine.CoffeeMachine" method="makeCustomCoffee">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/coffeepoint/entity/equipment/Cashbox.java</url>
+          <line>13</line>
+          <properties class="coffeepoint.entity.equipment.Cashbox" method="addMoney">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/coffeepoint/service/order/OrderService.java</url>
+          <line>133</line>
+          <properties class="coffeepoint.service.order.OrderService.OrderBuilder.CustomCoffeeBuilder" method="make">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="65" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/equipment/coffeemachine/parts/MilkContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/equipment/coffeemachine/parts/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/equipment/coffeemachine/parts/WaterContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/reflect/Method.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="176" column="18" lean-forward="false" selection-start-line="176" selection-start-column="18" selection-end-line="176" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/Productable.java" />
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/drink/GrindingLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/Nameable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/Priceable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/food/menu/Sandwich.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/coffeepoint.entity">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>coffeepoint.entity</OriginalElement>
+          <nodes>
+            <node x="" y="">coffeepoint.entity.product</node>
+            <node x="" y="">coffeepoint.entity.employee</node>
+            <node x="" y="">coffeepoint.entity.equipment</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="85.0" y="173.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/coffeepoint">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>coffeepoint</OriginalElement>
+          <nodes>
+            <node x="0.0" y="840.0">coffeepoint.entity.equipment.PaymentTerminal</node>
+            <node x="136.00000000000003" y="368.0">coffeepoint.entity.product.food.menu.HotDog</node>
+            <node x="237.50000000000003" y="0.0">coffeepoint.entity.product.Priceable</node>
+            <node x="0.0" y="917.0">coffeepoint.entity.product.drink.GrindingLevel</node>
+            <node x="433.0" y="445.0">coffeepoint.entity.equipment.coffeemachine.parts.Container</node>
+            <node x="73.2754385964912" y="194.0">coffeepoint.entity.product.food.Food</node>
+            <node x="0.0" y="763.0">coffeepoint.service.CoffeePointCustomerService</node>
+            <node x="0.0" y="368.0">coffeepoint.entity.product.food.menu.Sandwich</node>
+            <node x="782.0" y="527.0">coffeepoint.entity.equipment.coffeemachine.parts.WaterContainer</node>
+            <node x="88.16052631578953" y="0.0">coffeepoint.entity.product.Nameable</node>
+            <node x="447.19210526315794" y="194.0">coffeepoint.entity.product.drink.menu.HotChocolate</node>
+            <node x="418.0" y="840.0">coffeepoint.service.ProductService</node>
+            <node x="59.7754385964912" y="286.0">coffeepoint.entity.product.food.Fastfood</node>
+            <node x="331.2754385964912" y="194.0">coffeepoint.entity.product.drink.Milky</node>
+            <node x="182.0" y="527.0">coffeepoint.entity.equipment.coffeemachine.parts.ChocolateContainer</node>
+            <node x="595.75" y="286.0">coffeepoint.entity.product.drink.menu.Americano</node>
+            <node x="178.27543859649123" y="194.0">coffeepoint.entity.product.drink.CupOfDrink</node>
+            <node x="166.02543859649123" y="112.0">coffeepoint.entity.product.Product</node>
+            <node x="294.0" y="763.0">coffeepoint.service.CoffeePointManagement</node>
+            <node x="908.7500000000001" y="286.0">coffeepoint.entity.product.drink.menu.Espresso</node>
+            <node x="617.0" y="840.0">coffeepoint.entity.equipment.coffeemachine.parts.CoffeeGrinder</node>
+            <node x="739.75" y="286.0">coffeepoint.entity.product.drink.menu.RegularCoffee</node>
+            <node x="667.0" y="917.0">coffeepoint.entity.equipment.grill.Grill</node>
+            <node x="429.75" y="286.0">coffeepoint.entity.product.drink.menu.Latte</node>
+            <node x="385.0" y="686.0">coffeepoint.entity.product.Menu.MenuBuilder</node>
+            <node x="0.0" y="604.0">coffeepoint.entity.equipment.coffeemachine.CoffeeMachine</node>
+            <node x="563.0" y="763.0">coffeepoint.entity.employee.EmployeeSchedule</node>
+            <node x="191.0" y="917.0">coffeepoint.CoffeePoint</node>
+            <node x="279.75" y="286.0">coffeepoint.entity.product.drink.menu.Cappuccino</node>
+            <node x="199.0" y="686.0">coffeepoint.order.OrderService.OrderBuilder</node>
+            <node x="531.0" y="917.0">coffeepoint.order.Order</node>
+            <node x="615.0" y="527.0">coffeepoint.entity.equipment.coffeemachine.parts.MilkContainer</node>
+            <node x="545.9421052631579" y="112.0">coffeepoint.entity.product.drink.Drink</node>
+            <node x="199.5" y="604.0">coffeepoint.order.OrderService</node>
+            <node x="410.0" y="604.0">coffeepoint.entity.product.Menu</node>
+            <node x="389.0" y="527.0">coffeepoint.entity.equipment.coffeemachine.parts.CoffeeBeansContainer</node>
+            <node x="369.0" y="917.0">coffeepoint.entity.employee.Employee</node>
+            <node x="215.0" y="840.0">coffeepoint.entity.equipment.coffeemachine.parts.Cappuccinatore</node>
+            <node x="612.1921052631579" y="194.0">coffeepoint.entity.product.drink.Coffee</node>
+            <node x="0.0" y="527.0">coffeepoint.entity.equipment.coffeemachine.parts.CreamContainer</node>
+            <node x="27.0" y="686.0">coffeepoint.entity.equipment.coffeemachine.CoffeeMachine.Builder</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="coffeepoint.entity.product.drink.Coffee" target="coffeepoint.entity.product.drink.Drink">
+              <point x="0.0" y="-16.0" />
+              <point x="660.1921052631579" y="169.0" />
+              <point x="611.9421052631579" y="169.0" />
+              <point x="22.0" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.equipment.coffeemachine.parts.ChocolateContainer" target="coffeepoint.entity.equipment.coffeemachine.parts.Container">
+              <point x="0.0" y="-16.0" />
+              <point x="275.5" y="507.0" />
+              <point x="468.4" y="507.0" />
+              <point x="-23.600000000000023" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.drink.menu.Cappuccino" target="coffeepoint.entity.product.drink.Coffee">
+              <point x="32.5" y="-16.0" />
+              <point x="377.25" y="256.0" />
+              <point x="621.792105263158" y="256.0" />
+              <point x="-38.39999999999998" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.drink.menu.Espresso" target="coffeepoint.entity.product.drink.Coffee">
+              <point x="0.0" y="-16.0" />
+              <point x="964.7500000000001" y="256.0" />
+              <point x="698.5921052631579" y="256.0" />
+              <point x="38.39999999999998" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.Menu.MenuBuilder" target="coffeepoint.entity.product.Menu">
+              <point x="0.0" y="-16.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.drink.menu.Americano" target="coffeepoint.entity.product.drink.Coffee">
+              <point x="0.0" y="-16.0" />
+              <point x="657.75" y="266.0" />
+              <point x="660.1921052631579" y="266.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.drink.CupOfDrink" target="coffeepoint.entity.product.Product">
+              <point x="0.0" y="-16.0" />
+              <point x="26.25" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.Product" target="coffeepoint.entity.product.Priceable">
+              <point x="26.25" y="-16.0" />
+              <point x="244.77543859649123" y="92.0" />
+              <point x="294.0" y="92.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.equipment.coffeemachine.CoffeeMachine.Builder" target="coffeepoint.entity.equipment.coffeemachine.CoffeeMachine">
+              <point x="0.0" y="-16.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.Product" target="coffeepoint.entity.product.Nameable">
+              <point x="-26.25" y="-16.0" />
+              <point x="192.27543859649123" y="72.0" />
+              <point x="147.66052631578953" y="72.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.order.OrderService.OrderBuilder" target="coffeepoint.order.OrderService">
+              <point x="0.0" y="-16.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.food.Food" target="coffeepoint.entity.product.Product">
+              <point x="28.333333333333343" y="-16.0" />
+              <point x="144.10877192982454" y="169.0" />
+              <point x="192.27543859649123" y="169.0" />
+              <point x="-26.25" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.drink.menu.RegularCoffee" target="coffeepoint.entity.product.drink.Coffee">
+              <point x="0.0" y="-16.0" />
+              <point x="814.25" y="266.0" />
+              <point x="679.392105263158" y="266.0" />
+              <point x="19.200000000000045" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.equipment.coffeemachine.parts.CoffeeBeansContainer" target="coffeepoint.entity.equipment.coffeemachine.parts.Container">
+              <point x="0.0" y="-16.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.food.Food" target="coffeepoint.entity.product.Nameable">
+              <point x="-28.333333333333314" y="-16.0" />
+              <point x="87.44210526315788" y="169.0" />
+              <point x="83.32719298245615" y="169.0" />
+              <point x="83.32719298245615" y="72.0" />
+              <point x="107.9938596491229" y="72.0" />
+              <point x="-39.66666666666663" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.food.menu.Sandwich" target="coffeepoint.entity.product.food.Fastfood">
+              <point x="0.0" y="-16.0" />
+              <point x="58.0" y="343.0" />
+              <point x="87.7754385964912" y="343.0" />
+              <point x="-28.0" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.equipment.coffeemachine.parts.CreamContainer" target="coffeepoint.entity.equipment.coffeemachine.parts.Container">
+              <point x="0.0" y="-16.0" />
+              <point x="81.0" y="497.0" />
+              <point x="444.8" y="497.0" />
+              <point x="-47.19999999999999" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.drink.menu.Latte" target="coffeepoint.entity.product.drink.Coffee">
+              <point x="21.5" y="-16.0" />
+              <point x="494.25" y="266.0" />
+              <point x="640.9921052631579" y="266.0" />
+              <point x="-19.200000000000045" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.food.Fastfood" target="coffeepoint.entity.product.food.Food">
+              <point x="0.0" y="-16.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.drink.menu.Latte" target="coffeepoint.entity.product.drink.Milky">
+              <point x="-21.5" y="-16.0" />
+              <point x="451.25" y="246.0" />
+              <point x="395.7754385964912" y="246.0" />
+              <point x="21.5" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.drink.Drink" target="coffeepoint.entity.product.Priceable">
+              <point x="22.0" y="-16.0" />
+              <point x="611.9421052631579" y="52.0" />
+              <point x="331.66666666666663" y="52.0" />
+              <point x="37.66666666666663" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.equipment.coffeemachine.parts.MilkContainer" target="coffeepoint.entity.equipment.coffeemachine.parts.Container">
+              <point x="0.0" y="-16.0" />
+              <point x="688.5" y="507.0" />
+              <point x="515.6" y="507.0" />
+              <point x="23.600000000000023" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.drink.menu.Cappuccino" target="coffeepoint.entity.product.drink.Milky">
+              <point x="-32.5" y="-16.0" />
+              <point x="312.25" y="266.0" />
+              <point x="352.7754385964912" y="266.0" />
+              <point x="-21.5" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.food.Food" target="coffeepoint.entity.product.Priceable">
+              <point x="0.0" y="-16.0" />
+              <point x="115.7754385964912" y="169.0" />
+              <point x="107.10877192982457" y="169.0" />
+              <point x="107.10877192982457" y="82.0" />
+              <point x="256.33333333333337" y="82.0" />
+              <point x="-37.666666666666686" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.drink.menu.HotChocolate" target="coffeepoint.entity.product.drink.Drink">
+              <point x="0.0" y="-16.0" />
+              <point x="519.6921052631579" y="169.0" />
+              <point x="567.9421052631579" y="169.0" />
+              <point x="-22.0" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.equipment.coffeemachine.parts.WaterContainer" target="coffeepoint.entity.equipment.coffeemachine.parts.Container">
+              <point x="0.0" y="-16.0" />
+              <point x="862.0" y="497.0" />
+              <point x="539.2" y="497.0" />
+              <point x="47.200000000000045" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.drink.Drink" target="coffeepoint.entity.product.Nameable">
+              <point x="-22.0" y="-16.0" />
+              <point x="567.9421052631579" y="62.0" />
+              <point x="187.32719298245618" y="62.0" />
+              <point x="39.66666666666666" y="16.0" />
+            </edge>
+            <edge source="coffeepoint.entity.product.food.menu.HotDog" target="coffeepoint.entity.product.food.Fastfood">
+              <point x="0.0" y="-16.0" />
+              <point x="188.50000000000003" y="343.0" />
+              <point x="143.7754385964912" y="343.0" />
+              <point x="28.0" y="16.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="491.0" y="861.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/drink/menu/Espresso.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="39" />
+          <folding>
+            <element signature="e#446#447#0" expanded="false" />
+            <element signature="e#474#475#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/drink/menu/Cappuccino.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/food/menu/HotDog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CoffeePoint.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/exceptions/NotPaidException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/service/ManagementService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/employee/EmployeeSchedule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/equipment/coffeemachine/parts/Cappuccinatore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/equipment/coffeemachine/parts/ChocolateContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <element signature="e#159#160#0" expanded="false" />
+            <element signature="e#190#191#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/equipment/coffeemachine/parts/CoffeeBeansContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/Bonusable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/drink/Coffee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="54" lean-forward="true" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/drink/menu/Americano.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="61" lean-forward="false" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/drink/menu/HotChocolate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#521#522#0" expanded="false" />
+            <element signature="e#549#550#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/drink/menu/Latte.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/food/Fastfood.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/food/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="73" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/drink/Drink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/drink/CupOfDrink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/drink/additive/Additivable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="56" lean-forward="false" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/drink/additive/Chocolate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="4" selection-end-column="38" />
+          <folding>
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/drink/additive/Cream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/exceptions/NotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/equipment/grill/Grill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/service/bonuscard/BonusCardService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/service/bonuscard/BonusCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#248#249#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/drink/additive/Milk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="e#318#319#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/equipment/PaymentTerminal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <folding>
+            <element signature="e#184#185#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/service/order/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/CoffeePoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="120" column="33" lean-forward="false" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3022#3023#0" expanded="true" />
+            <element signature="e#3050#3051#0" expanded="true" />
+            <element signature="e#3190#3191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/product/drink/menu/RegularCoffee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/equipment/Cashbox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/service/order/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2121#2122#0" expanded="true" />
+            <element signature="e#2177#2178#0" expanded="true" />
+            <element signature="e#4303#4304#0" expanded="true" />
+            <element signature="e#4351#4352#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
+            <element signature="e#4461#4462#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/equipment/coffeemachine/CoffeeMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6818#6819#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/entity/employee/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffeepoint/service/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-419">
+          <caret line="27" column="68" lean-forward="false" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

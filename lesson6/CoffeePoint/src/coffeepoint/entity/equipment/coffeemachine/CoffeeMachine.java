@@ -13,7 +13,7 @@ import java.util.Map;
 и капучинатор, лол), но позже их тоже задействую. */
 public class CoffeeMachine {
     private String name;     // Name of model
-    private int coffeeCupsCapacity; // How many caps of menu can build at the same time
+    private int coffeeCupsCapacity; // How many caps of coffee can make at the same time
 
     /* Mandatory parameters*/
     private CoffeeGrinder coffeeGrinder;

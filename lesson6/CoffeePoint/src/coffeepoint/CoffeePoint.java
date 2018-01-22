@@ -12,31 +12,33 @@ import coffeepoint.service.CustomerService;
 import coffeepoint.service.ManagementService;
 import coffeepoint.service.order.OrderService;
 import coffeepoint.service.ProductService;
-
 import java.util.HashSet;
 import java.util.Set;
 
+/* Represents a single CoffeePoint*/
 public class CoffeePoint {
     private String name;
     private String address;
     private boolean isOpened;
     private Set<Employee> employees = new HashSet<>();
     private Employee todayEmployee;
-    private EmployeeSchedule employeeSchedule; // maybe for management
+    private EmployeeSchedule employeeSchedule; // TODO
 
+    // Services for different domains of program
     private CustomerService customerService;
     private ManagementService management;
     private OrderService orderService;
     private ProductService productService;
     private BonusCardService bonusCardService;
 
+    // Equipment
     private CoffeeMachine coffeeMachine;
     private Grill grill;
     private Cashbox cashbox;
     private PaymentTerminal paymentTerminal;
 
+    // Menu of drinks and food
     private Menu menu;
-
 
     public CoffeePoint(){
         customerService = new CustomerService(this);
@@ -45,8 +47,8 @@ public class CoffeePoint {
         productService = new ProductService(this);
         menu = new Menu(this);
         bonusCardService = new BonusCardService(this);
-        cashbox = new Cashbox(this);
-        paymentTerminal = new PaymentTerminal(this);;
+        cashbox = new Cashbox();
+        paymentTerminal = new PaymentTerminal();;
     }
 
     public void open(){

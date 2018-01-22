@@ -2,7 +2,6 @@ package coffeepoint.entity.product.drink.menu;
 
 import coffeepoint.entity.product.Bonusable;
 import coffeepoint.entity.product.drink.Coffee;
-import coffeepoint.entity.product.drink.Milky;
 
 public class Latte extends Coffee implements Bonusable {
     private static String name = "Latte";

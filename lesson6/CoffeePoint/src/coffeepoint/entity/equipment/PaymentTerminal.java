@@ -1,14 +1,9 @@
 package coffeepoint.entity.equipment;
 
-import coffeepoint.CoffeePoint;
-
+/* Payment terminal*/
 public class PaymentTerminal {
-    CoffeePoint coffeePoint;
 
-    public PaymentTerminal(CoffeePoint coffeePoint){
-        this.coffeePoint = coffeePoint;
-    }
-
+    // always return true
     public boolean makeTransaction(int pinCode){
         // ...bank operations
         //

@@ -2,19 +2,18 @@ package coffeepoint.entity.product;
 
 import coffeepoint.CoffeePoint;
 import coffeepoint.entity.product.drink.Drink;
-import coffeepoint.entity.product.drink.additive.Additivable;
-import coffeepoint.entity.product.food.Food;
+import coffeepoint.entity.product.drink.additive.Additively;
+import coffeepoint.entity.product.food.Fastfood;
 import coffeepoint.exceptions.NotFoundException;
-
-import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
+/* Represents the menu of CoffeePoint: which drinks, additives for coffee and food it has. */
 public class Menu {
     private CoffeePoint coffeePoint;
     private Map<String, Product> drinks;
     private Map<String, Product> food;
-    private Map<String, Additivable> additives;
+    private Map<String, Additively> additives;
 
     // Initial creating in CoffeePoint
     public Menu(CoffeePoint coffeePoint) {
@@ -24,23 +23,12 @@ public class Menu {
         additives = new HashMap<>();
     }
 
-//    public Menu(MenuBuilder builder){
-//        coffeePoint = builder.coffeePoint;
-//        drinks = builder.drinks;
-//        food = builder.food;
-//    }
-
+    // Builder of menu
     public class MenuBuilder{
         private CoffeePoint coffeePoint;
         private Map<String, Product> drinks;
         private Map<String, Product> food;
-        private Map<String, Additivable> additives;
-
-        public MenuBuilder(){
-            drinks = new HashMap<>();
-            food = new HashMap<>();
-            additives = new HashMap<>();
-        }
+        private Map<String, Additively> additives;
 
         public MenuBuilder(Menu menu){
             coffeePoint = menu.coffeePoint;
@@ -49,8 +37,8 @@ public class Menu {
             additives = menu.additives;
         }
 
-        // Get names of Drink classes and check, whether CoffeeMachine can make this drinks
-        public MenuBuilder addDrink(String... names) {
+        // Get names of Drink classes and check, whether CoffeeMachine can create this drinks
+        public MenuBuilder addDrinks(String... names) {
             for(String name : names){
                 try{
                     Class<? extends Drink> drinkClass = (Class<? extends Drink>)
@@ -58,7 +46,7 @@ public class Menu {
                     String drinkName = drinkClass.newInstance().getName();
                     Drink drink = coffeePoint.getCoffeeMachine().getDrinkModes().get(drinkName);
                     if(drink!=null){
-                        drinks.put(drink.getName(), drink);
+                        drinks.put(drinkName, drink);
                     } else throw new Exception();
                 } catch(Exception e){
                     e.printStackTrace();
@@ -67,66 +55,66 @@ public class Menu {
             return this;
         }
 
-        // Get names of Food classes and checks whether they are present
+        // Get names of Additively classes and check, whether CoffeeMachine can add these additives
+        public MenuBuilder addAdditives(String... names){
+            for(String name : names){
+                try {
+                    Class<? extends Additively> additiveClass = (Class<? extends Additively>)
+                            Class.forName("coffeepoint.entity.product.drink.additive." + name);
+                    String additiveName = additiveClass.newInstance().getName();
+                    Additively additive = coffeePoint.getCoffeeMachine().getAdditives().get(additiveName);
+                    if(additive!=null){
+                        additives.put(additive.getName(), additive);
+                    } else throw new Exception();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            return this;
+        }
+
+        // Get names of Fastfood classes and checks whether Grill can make this fastfood
         public MenuBuilder addFood(String... names){
             for(String name : names){
                 try {
-                    Class<? extends Food> foodClass = (Class<? extends Food>)
+                    Class<? extends Fastfood> foodClass = (Class<? extends Fastfood>)
                             Class.forName("coffeepoint.entity.product.food.menu." + name);
-                    Food foodObject = foodClass.newInstance();
-                    Method method = foodClass.getMethod("getName");
-                    String nameFromMethod = (String) method.invoke(foodObject);
-                    food.put(nameFromMethod, foodObject);
+                    String fastfoodName = foodClass.newInstance().getName();
+                    Fastfood fastfood = coffeePoint.getGrill().getFastfoodModes().get(fastfoodName);
+                    if(fastfood!=null){
+                        food.put(fastfoodName, fastfood);
+                    }
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
             return this;
         }
-
-        public MenuBuilder addAdditive(String... names){
-            for(String name : names){
-                try {
-                    Class<? extends Additivable> additiveClass = (Class<? extends Additivable>)
-                            Class.forName("coffeepoint.entity.product.drink.additive." + name);
-                    Additivable additiveObject = additiveClass.newInstance();
-                    Method method = additiveClass.getMethod("getName");
-                    String nameFromMethod = (String) method.invoke(additiveObject);
-                    additives.put(nameFromMethod, additiveObject);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-            return this;
-        }
-
-//        private <T> T createObject(String name, String classpath) throws Exception{
-//            Class<? extends T> clazz = (Class<? extends T>)
-//                    Class.forName(classpath + name);
-//            T object = clazz.newInstance();
-//            return (T) object;
-//        }
     }
 
+    // Return MenuBuilder
     public MenuBuilder getMenuBuilder(){
         return new MenuBuilder(this);
     }
 
+    // Take in Drink name. If present, returns Product object of this Drink
     public Product getDrink(String name) throws Exception {
-        Product cupOfDrink = drinks.get(name);
-        if(cupOfDrink!=null) return cupOfDrink;
+        Product drink = drinks.get(name);
+        if(drink!=null) return drink;
         else throw new NotFoundException();
     }
 
+    // Take in Fastfood name. If present, returns Product object of this Fastfood
     public Product getFood(String name) throws Exception{
-        Product foodObject = food.get(name);
-        if(foodObject!=null) return foodObject;
+        Product fastfood = food.get(name);
+        if(fastfood!=null) return fastfood;
         else throw new NotFoundException();
     }
 
-    public Additivable getAdditive(String name) throws Exception{
-        Additivable additiveObject = additives.get(name);
-        if(additiveObject!=null) return additiveObject;
+    // Take in additive name. If present, returns Product object of this Additively
+    public Additively getAdditive(String name) throws Exception{
+        Additively additive = additives.get(name);
+        if(additive!=null) return additive;
         else throw new NotFoundException();
     }
 

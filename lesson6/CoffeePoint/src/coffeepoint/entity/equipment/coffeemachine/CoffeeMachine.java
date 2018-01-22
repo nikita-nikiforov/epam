@@ -1,28 +1,28 @@
 package coffeepoint.entity.equipment.coffeemachine;
 
 import coffeepoint.entity.equipment.coffeemachine.parts.*;
-import coffeepoint.entity.product.Product;
 import coffeepoint.entity.product.drink.Drink;
-import coffeepoint.entity.product.drink.additive.Additivable;
-import coffeepoint.entity.product.drink.menu.RegularCoffee;
+import coffeepoint.entity.product.drink.additive.Additively;
+import coffeepoint.entity.product.drink.menu.CustomCoffee;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
+/* Coffee machine. Create drinks (not only coffee, but HotChocolate too) */
 public class CoffeeMachine {
+    private String name;     // Name of model
+    private int coffeeCupsCapacity; // How many caps of menu can build at the same time
+
     /* Mandatory parameters*/
-    // Name of model
-    private String name;
-    // How many caps of menu can build at the same time
-    private int coffeeCupsCapacity;
     private CoffeeGrinder coffeeGrinder;
     private CoffeeBeansContainer coffeeBeansContainer;
     private WaterContainer waterContainer;
-    // Map for menu of drinks whick a machine can build. Contains name of a drink and it's object
+
+    // Map for menu of drinks which the machine can make. Contains name of a drink and it's object
     private Map<String, Drink> drinkModes;
-    private Map<String, Additivable> additives;
+    // The same for additives (like Milk, Cream, Chocolate)
+    private Map<String, Additively> additives;
+
     /* Optional parameters */
     private MilkContainer milkContainer;
     private CreamContainer creamContainer;
@@ -44,6 +44,7 @@ public class CoffeeMachine {
         cappuccinatore = builder.cappuccinatore;
     }
 
+    // Builder for CoffeeMachine
     public static class Builder{
         // Required parameters
         private String name;
@@ -52,8 +53,7 @@ public class CoffeeMachine {
         private CoffeeBeansContainer coffeeBeansContainer;
         private WaterContainer waterContainer;
         private Map<String, Drink> drinkModes;
-        private Map<String, Additivable> additives;
-
+        private Map<String, Additively> additives;
 
         // Optional parameters
         private MilkContainer milkContainer = null;
@@ -72,40 +72,43 @@ public class CoffeeMachine {
                 this.drinkModes = new HashMap<>();
                 this.additives = new HashMap<>();
                 // Any coffeemachine can build regular menu
-                Drink coffeeDrink = new RegularCoffee();
+                Drink coffeeDrink = new CustomCoffee();
                 drinkModes.put(coffeeDrink.getName(), coffeeDrink);
             }
 
+            // Add container for milk
             public Builder addMilkContainer(double milkContainerCapacity){
                 milkContainer = new MilkContainer(milkContainerCapacity);
                 return this;
             }
 
+            // Add container for cream
             public Builder addCreamContainer(double creamContainerCapacity){
                 creamContainer = new CreamContainer(creamContainerCapacity);
                 return this;
             }
 
+            // Add container for chocolate
             public Builder addChocolateContainer(double chocolateContainerCapacity){
                 chocolateContainer = new ChocolateContainer(chocolateContainerCapacity);
                 return this;
             }
 
+            // Add cappuccinatore
             public Builder addCappucinatore(){
                 cappuccinatore = new Cappuccinatore();
                 return this;
             }
 
-            // Parameters are names of drinks' classes (i.e. "HotChocolate", "Latte")
+            // Add types of Drink the machine can make.
+            // Take in names of drinks' classes (i.e. "HotChocolate", "Latte")
             public Builder addDrinkModes(String... names){
                 for(String name : names){
                     try {
                         Class<? extends Drink> drinkClass = (Class<? extends Drink>)
                                 Class.forName("coffeepoint.entity.product.drink.menu." + name);
                         Drink drink = drinkClass.newInstance();
-                        Method method = drinkClass.getMethod("getName");
-                        String nameFromMethod = (String) method.invoke(drink);
-                        drinkModes.put(nameFromMethod, drink);
+                        drinkModes.put(drink.getName(), drink);
                     } catch (ClassNotFoundException e) {
                         System.out.println("Don't have such drink definition.");
                         e.printStackTrace();
@@ -116,15 +119,15 @@ public class CoffeeMachine {
                 return this;
             }
 
+            // Add types of Additives the machine can add to CustomCoffee.
+            // Take in names of additives' classes (i.e. "Milk", "Cream")
             public Builder addAdditives(String... names){
                 for(String name : names){
                     try {
-                        Class<? extends Additivable> additiveClass = (Class<? extends Additivable>)
+                        Class<? extends Additively> additiveClass = (Class<? extends Additively>)
                                 Class.forName("coffeepoint.entity.product.drink.additive." + name);
-                        Additivable additive = additiveClass.newInstance();
-                        Method method = additiveClass.getMethod("getName");
-                        String nameFromMethod = (String) method.invoke(additive);
-                        additives.put(nameFromMethod, additive);
+                        Additively additive = additiveClass.newInstance();
+                        additives.put(additive.getName(), additive);
                     } catch (ClassNotFoundException e) {
                         System.out.println("Don't have such drink definition.");
                         e.printStackTrace();
@@ -135,37 +138,34 @@ public class CoffeeMachine {
                 return this;
             }
 
+            // Build CoffeeMachine
             public CoffeeMachine build(){
                 return new CoffeeMachine(this);
             }
     }
 
+    // Take in drink name. Return instance of it
     public Drink makeDrink(String drinkName){
         Drink drink = drinkModes.get(drinkName);
         Drink newDrink = null;
-        // Немножко говнокода из-за конструктора RegularCoffee. Делает копию RegularCoffee со всеми
-        // добавками (Milk, Cream..)
-        // TODO
-        if(drink instanceof RegularCoffee) newDrink = new RegularCoffee((RegularCoffee) drink);
-        else{
-            try {
-                newDrink = drink.getClass().newInstance();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        try {
+            newDrink = drink.getClass().newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         return newDrink;
     }
 
-    public Drink makeCustomCoffee(RegularCoffee regularCoffee){
-        return new RegularCoffee(regularCoffee);
+    // Take in constructed CustomCoffee. Return it's new instance
+    public Drink makeCustomCoffee(CustomCoffee customCoffee){
+        return new CustomCoffee(customCoffee);
     }
 
     public Map<String, Drink> getDrinkModes() {
         return drinkModes;
     }
 
-    public Map<String, Additivable> getAdditives(){
+    public Map<String, Additively> getAdditives(){
         return additives;
     }
 }

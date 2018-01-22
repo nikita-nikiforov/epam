@@ -1,10 +1,8 @@
 package coffeepoint.entity.product.drink;
 
-import coffeepoint.entity.product.Nameable;
-import coffeepoint.entity.product.Priceable;
 import coffeepoint.entity.product.Product;
-import coffeepoint.service.ProductService;
 
+// Abstract class for all Drinks
 public abstract class Drink extends Product {
 
 }

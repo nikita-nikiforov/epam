@@ -1,13 +1,13 @@
 package coffeepoint.entity.equipment.grill;
 
 import coffeepoint.entity.product.food.Fastfood;
-
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
+// Grill makes hotdogs and sandwiches
 public class Grill {
-
+    // Fastfood types grill can create
     private Map<String, Fastfood> fastfoodModes;
 
     public Grill(GrillBuilder grillBuilder){
@@ -17,9 +17,9 @@ public class Grill {
     public static class GrillBuilder{
         private Map<String, Fastfood> fastfoodModes = new HashMap<>();
 
-
         public GrillBuilder(){}
 
+        // Parameters are Classes' of fastfood names (i.e. "HotDog", "Sandwich")
         public GrillBuilder addFastfoodModes(String... names){
             for(String name : names){
                 try {
@@ -30,7 +30,7 @@ public class Grill {
                     String nameFromMethod = (String) method.invoke(fastfood);
                     fastfoodModes.put(nameFromMethod, fastfood);
                 } catch (ClassNotFoundException e) {
-                    System.out.println("Don't have such fastfood definition.");
+                    System.out.println("Don't have such fastfood class.");
                     e.printStackTrace();
                 } catch (Exception e){
                     e.printStackTrace();
@@ -44,6 +44,7 @@ public class Grill {
         }
     }
 
+    // Create an instance of new fastfood
     public Fastfood makeFastfood(String productName){
         Fastfood fastfoodType = fastfoodModes.get(productName);
         Fastfood result = null;
@@ -55,4 +56,7 @@ public class Grill {
         return result;
     }
 
+    public Map<String, Fastfood> getFastfoodModes() {
+        return fastfoodModes;
+    }
 }

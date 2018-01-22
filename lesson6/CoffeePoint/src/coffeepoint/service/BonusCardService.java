@@ -1,6 +1,7 @@
-package coffeepoint.service.bonuscard;
+package coffeepoint.service;
 
 import coffeepoint.CoffeePoint;
+import coffeepoint.entity.BonusCard;
 import coffeepoint.entity.product.Bonusable;
 import coffeepoint.entity.product.Product;
 import java.util.HashMap;

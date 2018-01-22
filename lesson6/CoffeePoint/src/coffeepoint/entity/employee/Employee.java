@@ -6,7 +6,7 @@ import coffeepoint.entity.product.drink.Drink;
 import coffeepoint.entity.product.drink.menu.CustomCoffee;
 import coffeepoint.entity.product.food.Fastfood;
 import coffeepoint.exceptions.NotPaidException;
-import coffeepoint.service.order.Order;
+import coffeepoint.entity.Order;
 import java.util.*;
 
 /* Employee of CoffeePoint*/

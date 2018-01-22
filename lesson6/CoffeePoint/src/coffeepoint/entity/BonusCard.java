@@ -1,4 +1,4 @@
-package coffeepoint.service.bonuscard;
+package coffeepoint.entity;
 
 /* Represents customer's bonus card */
 public class BonusCard {

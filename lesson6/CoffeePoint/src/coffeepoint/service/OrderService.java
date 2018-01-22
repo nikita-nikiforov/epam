@@ -1,12 +1,13 @@
-package coffeepoint.service.order;
+package coffeepoint.service;
 
 import coffeepoint.CoffeePoint;
+import coffeepoint.entity.Order;
 import coffeepoint.entity.product.Product;
 import coffeepoint.entity.product.drink.Drink;
 import coffeepoint.entity.product.drink.additive.Additively;
 import coffeepoint.entity.product.drink.menu.CustomCoffee;
 import coffeepoint.entity.product.food.Fastfood;
-import coffeepoint.service.bonuscard.BonusCard;
+import coffeepoint.entity.BonusCard;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -26,16 +27,12 @@ public class OrderService {
         return new OrderBuilder();
     }
 
+    // Builder of Order
     public class OrderBuilder{
-        OrderService orderService;
-        Map<Product, Integer> products = new HashMap<>();   // stores type of product and amount
-        double totalPrice;
-        boolean paid = false;       // is Order paid or no
-        BonusCard bonusCard = null;     // Bonus card of customer
-
-        public OrderBuilder(){
-            orderService = OrderService.this;
-        }
+        private Map<Product, Integer> products = new HashMap<>();  // stores type of product and amount
+        private double totalPrice;          // total price of order
+        private boolean paid = false;       // whether Order paid or no
+        private BonusCard bonusCard = null;     // Bonus card of customer
 
         // Take in the name of drink (i.e. "Cappuccino", "Hot Chocolate") and amount of cups.
         public OrderBuilder addDrink(String name, int amount){
@@ -156,6 +153,23 @@ public class OrderService {
             }
         }
 
+
+        // Getters of OrderBuilder fields. Order(OrderBuilder ob) constructor uses them
+        public Map<Product, Integer> getProducts() {
+            return products;
+        }
+
+        public double getTotalPrice() {
+            return totalPrice;
+        }
+
+        public boolean isPaid() {
+            return paid;
+        }
+
+        public BonusCard getBonusCard() {
+            return bonusCard;
+        }
     }
 
 

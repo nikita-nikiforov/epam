@@ -2,7 +2,7 @@ package coffeepoint.entity.product.drink.menu;
 
 import coffeepoint.entity.product.drink.Coffee;
 import coffeepoint.entity.product.drink.additive.Additively;
-import coffeepoint.service.order.OrderService;
+import coffeepoint.service.OrderService;
 
 import java.util.Set;
 

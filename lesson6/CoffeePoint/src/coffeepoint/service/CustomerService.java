@@ -3,9 +3,9 @@ package coffeepoint.service;
 import coffeepoint.CoffeePoint;
 import coffeepoint.entity.product.Product;
 import coffeepoint.exceptions.NotPaidException;
-import coffeepoint.service.bonuscard.BonusCard;
-import coffeepoint.service.order.Order;
-import coffeepoint.service.order.OrderService.*;
+import coffeepoint.entity.BonusCard;
+import coffeepoint.entity.Order;
+import coffeepoint.service.OrderService.*;
 import java.util.HashSet;
 import java.util.Set;
 

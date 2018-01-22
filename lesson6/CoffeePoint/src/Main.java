@@ -1,9 +1,9 @@
 import coffeepoint.CoffeePoint;
 import coffeepoint.entity.equipment.grill.Grill;
 import coffeepoint.entity.product.Product;
-import coffeepoint.service.bonuscard.BonusCard;
-import coffeepoint.service.bonuscard.BonusCardService;
-import coffeepoint.service.order.Order;
+import coffeepoint.entity.BonusCard;
+import coffeepoint.service.BonusCardService;
+import coffeepoint.entity.Order;
 import coffeepoint.service.ManagementService;
 import coffeepoint.service.CustomerService;
 import coffeepoint.entity.employee.Employee;

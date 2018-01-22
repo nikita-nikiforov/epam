@@ -9,8 +9,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /* Coffee machine. Create drinks (not only coffee, but HotChocolate too)
-Знаю, что задофига составляющих (контейнеры для зёрен, молока, кофемолка
-и капучинатор, лол), но позже их тоже задействую. */
+* Знаю, что задофига составляющих (контейнеры для зёрен, молока, кофемолка
+* и капучинатор, лол), но с ними можно будет реализовать работу кофемашины. */
 public class CoffeeMachine {
     private String name;     // Name of model
     private int coffeeCupsCapacity; // How many caps of coffee can make at the same time

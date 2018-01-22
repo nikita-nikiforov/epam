@@ -153,7 +153,6 @@ public class OrderService {
             }
         }
 
-
         // Getters of OrderBuilder fields. Order(OrderBuilder ob) constructor uses them
         public Map<Product, Integer> getProducts() {
             return products;
@@ -171,6 +170,4 @@ public class OrderService {
             return bonusCard;
         }
     }
-
-
 }

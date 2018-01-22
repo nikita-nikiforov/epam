@@ -8,7 +8,9 @@ import coffeepoint.entity.product.drink.menu.CustomCoffee;
 import java.util.HashMap;
 import java.util.Map;
 
-/* Coffee machine. Create drinks (not only coffee, but HotChocolate too) */
+/* Coffee machine. Create drinks (not only coffee, but HotChocolate too)
+Знаю, что задофига составляющих (контейнеры для зёрен, молока, кофемолка
+и капучинатор, лол), но позже их тоже задействую. */
 public class CoffeeMachine {
     private String name;     // Name of model
     private int coffeeCupsCapacity; // How many caps of menu can build at the same time

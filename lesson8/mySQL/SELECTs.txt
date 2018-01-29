@@ -1,0 +1,270 @@
+1.
+
+1. 	SELECT DISTINCT maker, 'type'
+	FROM Product
+	ORDER BY maker;
+
+2. 	SELECT model, ram, speed, price
+	FROM Laptop
+	WHERE price>1000
+	ORDER BY ram, price DESC;
+
+3. 	SELECT * FROM Printer
+	WHERE color='y'
+	ORDER BY price DESC;
+
+4. 	SELECT model, speed, hd, cd, price
+	FROM PC
+	WHERE cd IN ('12x', '24x') AND price<600
+	ORDER BY speed DESC;
+
+5. 	SELECT name, class
+	FROM Ships
+	ORDER BY name;
+	
+6. 	SELECT * FROM PC 
+	WHERE speed>=500 AND price<800 
+	ORDER BY price DESC;
+
+7. 	SELECT * FROM Printer 
+	WHERE type!='matrix' AND price<300 
+	ORDER BY type DESC;
+
+8. 	SELECT model, speed 
+	FROM PC 
+	WHERE speed BETWEEN 400 AND 600 
+	ORDER BY hd;
+
+9. 	SELECT PC.model, speed, hd 
+	FROM PC 
+	INNER JOIN Product
+	ON Product.model=PC.model 
+	WHERE hd IN (10, 20) AND Product.maker='A' 
+	ORDER BY speed;
+
+10. 	SELECT model, speed, hd, price 
+	FROM Laptop 
+	WHERE screen>=12 
+	ORDER BY price DESC;
+
+11. 	SELECT model, type, price 
+	FROM Printer 
+	WHERE price<300 
+	ORDER BY type DESC;
+
+12. 	SELECT model, ram, price 
+	FROM Laptop 
+	WHERE ram=64 
+	ORDER BY screen;
+
+13. 	SELECT model, ram, price 
+	FROM PC 
+	WHERE ram>64 
+	ORDER BY hd;
+
+14. 	SELECT model, speed, price 
+	FROM PC 
+	WHERE speed BETWEEN 500 AND 750 
+	ORDER BY hd DESC;
+
+15.	SELECT * FROM Outcome_o 
+	WHERE `out`>2000 
+	ORDER BY date DESC;
+
+16.	SELECT * FROM Income_o 
+	WHERE inc BETWEEN 5000 AND 10000 
+	ORDER BY inc;
+
+17.	SELECT * FROM Income 
+	WHERE point=1 
+	ORDER BY inc;
+
+18. 	SELECT * FROM Outcome 
+	WHERE point=2 
+	ORDER BY `out`;
+
+19. 	SELECT * FROM Classes 
+	WHERE country='Japan' 
+	ORDER BY type DESC;
+
+20. 	SELECT name, launched 
+	FROM Ships 
+	WHERE launched BETWEEN 1920 AND 1942 
+	ORDER BY launched DESC;
+
+21. 	SELECT ship, battle, result 
+	FROM Outcomes 
+	WHERE battle='Guadalcanal' AND result='OK' 
+	ORDER BY ship DESC;
+
+22. 	SELECT ship, battle, result 
+	FROM Outcomes 
+	WHERE result='sunk' 
+	ORDER BY ship DESC;
+
+23. 	SELECT class, displacement 
+	FROM Classes 
+	WHERE displacement>=40000 
+	ORDER BY type;
+
+24. 	SELECT trip_no, town_from, town_to 
+	FROM Trip 
+	WHERE town_from='London' || town_to = 'London' 
+	ORDER BY time_out;
+
+25. 	SELECT trip_no, plane, town_from, town_to 
+	FROM Trip 
+	WHERE plane='TU-154' 
+	ORDER BY time_out DESC;
+
+26. 	SELECT trip_no, plane, town_from, town_to 
+	FROM Trip 
+	WHERE plane!='IL-86' 
+	ORDER BY plane;
+
+27. 	SELECT trip_no, plane, town_from, town_to 
+	FROM Trip 
+	WHERE town_from!='Rostov' AND town_to!='Rostov' 
+	ORDER BY plane;
+
+
+
+
+
+2.
+
+1. 	SELECT model 
+	FROM PC 
+	WHERE model LIKE '%1%1%';
+
+2. 	SELECT * FROM Outcome 
+	WHERE EXTRACT(MONTH FROM date)=3;
+
+3. 	SELECT * FROM Outcome_o 
+	WHERE EXTRACT(DAY FROM date)=14;
+
+4. 	SELECT name 
+	FROM Ships 
+	WHERE name LIKE 'W%n';
+
+5. 	SELECT name 
+	FROM Ships 
+	WHERE name LIKE '%e%e%';
+
+6. 	SELECT name, launched 
+	FROM Ships 
+	WHERE name NOT RLIKE 'a$';
+
+7. 	SELECT * FROM Ships 
+	WHERE name LIKE '% %' AND name NOT RLIKE 'c$';
+
+8. 	SELECT * FROM Trip 
+	WHERE EXTRACT(HOUR_MINUTE FROM time_out) BETWEEN 1200 AND 1700;
+
+9. 	SELECT * FROM Trip 
+	WHERE EXTRACT(HOUR_MINUTE FROM time_in) BETWEEN 1700 AND 2300;
+
+10. 	SELECT date 
+	FROM Pass_in_trip 
+	WHERE place LIKE '1%';
+
+11. 	SELECT date 
+	FROM Pass_in_trip 
+	WHERE place LIKE '%c';
+
+12. 	SELECT * FROM Passenger 
+	WHERE SUBSTRING_INDEX(name, ' ', -1) LIKE 'C%';
+
+13. 	SELECT * FROM Passenger 
+	WHERE SUBSTRING_INDEX(name, ' ', -1) NOT LIKE 'J%';
+
+
+
+
+
+
+3.
+
+1. 	SELECT maker, type, speed, hd 
+	FROM PC 
+	INNER JOIN Product 
+	ON Product.model=PC.model 
+	WHERE hd<=20;
+
+2. 	SELECT maker 
+	FROM PC 
+	INNER JOIN Product 
+	ON Product.model=PC.model 
+	WHERE speed>=600;
+
+3. 	SELECT maker 
+	FROM Laptop 
+	INNER JOIN Product 
+	ON Product.model=Laptop.model 
+	WHERE speed<=500;
+
+4. 	___ SELECT DISTINCT l1.model, l2.model, l1.hd, l1.ram 
+	FROM Laptop l1 
+	INNER JOIN  Laptop l2 
+	ON (l2.ram=l1.ram) AND (l2.hd=l1.hd) AND (l2.code!=l1.code);
+
+5. 	____ SELECT country, class 
+	FROM Classes 
+	WHERE type = ('bc' || 'bb');
+
+6. 	SELECT PC.model, maker, price 
+	FROM Product 
+	INNER JOIN PC 
+	ON PC.model=Product.model 
+	WHERE PC.price<600;
+
+7. 	SELECT Printer.model, maker, price 
+	FROM Product 
+	INNER JOIN Printer 
+	ON Printer.model=Product.model 
+	WHERE Printer.price<300;
+
+8. 	SELECT maker, PC.model, price 
+	FROM Product 
+	INNER JOIN PC 
+	ON PC.model=Product.model;
+
+9. 	SELECT maker, PC.model, price 
+	FROM Product 
+	INNER JOIN PC 
+	ON PC.model=Product.model;
+
+10. 	SELECT DISTINCT maker, type, Laptop.model, price 
+	FROM Product 
+	INNER JOIN Laptop 
+	ON Laptop.model=Product.model 
+	WHERE speed>600;
+
+11. 	SELECT name, displacement 
+	FROM Ships 
+	INNER JOIN Classes 
+	ON Classes.class=Ships.class;
+
+12. 	SELECT ship, date 
+	FROM Outcomes 
+	INNER JOIN Battles 
+	ON Battles.name=Outcomes.battle 
+	WHERE result='OK';
+
+13. 	SELECT name, country 
+	FROM Ships 
+	INNER JOIN Classes 
+	ON Classes.class=Ships.class;
+
+14. 	SELECT trip_no, plane, name AS company_name 
+	FROM Trip 
+	INNER JOIN Company 
+	ON Company.ID_comp=Trip.ID_comp 
+	WHERE plane='Boeing';
+
+15. 	SELECT name, date 
+	FROM Passenger 
+	INNER JOIN Pass_in_trip 
+	ON Pass_in_trip.ID_psg=Passenger.ID_psg;
+
+

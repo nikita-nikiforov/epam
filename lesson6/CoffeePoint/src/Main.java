@@ -74,12 +74,7 @@ public class Main {
         // Process order and get my products
         Set<Product> purchasedProducts3 = customerService.processOrder(order3);
 
-
         System.out.println("CoffeePoint earned " + coffeePoint.getCashbox().getMoney()
                         + " dollars!"); // CoffeePoint earned 213.57 dollars!
-
-//        Latte latte = new Latte();
-//        Drink newLatte = latte.make();
-//        System.out.println(newLatte + " " + newLatte.make());
     }
 }

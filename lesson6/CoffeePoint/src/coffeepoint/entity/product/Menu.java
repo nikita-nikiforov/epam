@@ -1,14 +1,14 @@
 package coffeepoint.entity.product;
 
 import coffeepoint.CoffeePoint;
-import coffeepoint.entity.product.drink.Drink;
 import coffeepoint.entity.product.drink.additive.Additively;
-import coffeepoint.entity.product.food.Fastfood;
 import coffeepoint.exceptions.NotFoundException;
 import java.util.HashMap;
 import java.util.Map;
 
-/* Represents the menu of CoffeePoint: which drinks, additives for coffee and food it has. */
+/* Represents the menu of CoffeePoint: which drinks, additives for coffee, and food
+ * customer can buy. It's possible to add to menu only those products, classes of which
+ * are present in the program. */
 public class Menu {
     private CoffeePoint coffeePoint;
     private Map<String, Product> drinks;
@@ -37,52 +37,33 @@ public class Menu {
             additives = menu.additives;
         }
 
-        // Get names of Drink classes and check, whether CoffeeMachine can create this drinks
+        // Get names of Drink classes and delegate operation to addGeneral()
         public MenuBuilder addDrinks(String... names) {
-            for(String name : names){
-                try{
-                    Class<? extends Drink> drinkClass = (Class<? extends Drink>)
-                            Class.forName("coffeepoint.entity.product.drink.menu." + name);
-                    String drinkName = drinkClass.newInstance().getName();
-                    Drink drink = coffeePoint.getCoffeeMachine().getDrinkModes().get(drinkName);
-                    if(drink!=null){
-                        drinks.put(drinkName, drink);
-                    } else throw new Exception();
-                } catch(Exception e){
-                    e.printStackTrace();
-                }
-            }
-            return this;
+            return addGeneral("coffeepoint.entity.product.drink.menu.", drinks, names);
         }
 
-        // Get names of Additively classes and check, whether CoffeeMachine can add these additives
+        // Get names of Additively classes and delegate operation to addGeneral()
         public MenuBuilder addAdditives(String... names){
-            for(String name : names){
-                try {
-                    Class<? extends Additively> additiveClass = (Class<? extends Additively>)
-                            Class.forName("coffeepoint.entity.product.drink.additive." + name);
-                    String additiveName = additiveClass.newInstance().getName();
-                    Additively additive = coffeePoint.getCoffeeMachine().getAdditives().get(additiveName);
-                    if(additive!=null){
-                        additives.put(additive.getName(), additive);
-                    } else throw new Exception();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-            return this;
+            return addGeneral("coffeepoint.entity.product.drink.additive.", additives, names);
         }
 
-        // Get names of Fastfood classes and checks whether Grill can make this fastfood
+        // Get names of Fastfood classes and delegate operation to addGeneral()
         public MenuBuilder addFood(String... names){
+            return addGeneral("coffeepoint.entity.product.food.menu.", food, names);
+        }
+
+        // Generic method for adding new element to menu
+        // Takes in a path to classes of elements, a map where to add them,
+        // and names of elements' classes.
+        private <T extends Nameable> MenuBuilder addGeneral(String path, Map<String, T> map,
+                                                            String... names){
             for(String name : names){
                 try {
-                    Class<? extends Fastfood> foodClass = (Class<? extends Fastfood>)
-                            Class.forName("coffeepoint.entity.product.food.menu." + name);
-                    String fastfoodName = foodClass.newInstance().getName();
-                    Fastfood fastfood = coffeePoint.getGrill().getFastfoodModes().get(fastfoodName);
-                    if(fastfood!=null){
-                        food.put(fastfoodName, fastfood);
+                    Class<? extends T> elementClass = (Class<? extends T>)
+                            Class.forName(path + name);
+                    T element = elementClass.newInstance();
+                    if(element!=null){
+                        map.put(element.getName(), element);
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -117,5 +98,4 @@ public class Menu {
         if(additive!=null) return additive;
         else throw new NotFoundException();
     }
-
 }

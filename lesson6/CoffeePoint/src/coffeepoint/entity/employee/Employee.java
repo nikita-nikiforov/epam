@@ -30,46 +30,25 @@ public class Employee {
         // throw Exception if order is not paid
         if(!order.isPaid()) throw new NotPaidException();
         Set<Product> result = new HashSet<>();
-        // Map of amounts and types of products to make
-        Map<Product, Integer> productsToMade = order.getProducts();
-        Iterator<Map.Entry<Product, Integer>> orderProductsIterator =
-                productsToMade.entrySet().iterator();
-        while(orderProductsIterator.hasNext()){
-            Map.Entry<Product, Integer> productEntry = orderProductsIterator.next();
+        // Map of types and amounts of products to make
+        Map<Product, Integer> productsToMake = order.getProducts();
+        Iterator<Map.Entry<Product, Integer>> productsToMakeIterator =
+                productsToMake.entrySet().iterator();
+        while(productsToMakeIterator.hasNext()){
+            Map.Entry<Product, Integer> productEntry = productsToMakeIterator.next();
             Product product = productEntry.getKey();    // get Product type
             int amount = productEntry.getValue();       // get amount
             // create [amount] instances of Product
             for(int i=0; i<amount; i++){
-                if (product instanceof Drink){
-                    Drink newDrink = makeDrink(product);        // for Drink
-                    result.add(newDrink);
-                } else if(product instanceof Fastfood){
-                    Fastfood newFastfood = makeFastfood(product);   // for Fastfood
-                    result.add(newFastfood);
-                }
+                result.add(makeProduct(product));
             }
         }
         return result;
     }
 
-    // Take in Product, cast it to Drink and send to CoffeeMachine. Return Drink instance
-    public Drink makeDrink(Product product){
-        Drink result = null;
-        // CustomCoffee has special behavior
-        if(product instanceof CustomCoffee){
-            result = coffeePoint.getCoffeeMachine().makeCustomCoffee((CustomCoffee) product);
-        }else {
-            String productName = product.getName();
-            result  = coffeePoint.getCoffeeMachine().makeDrink(productName);
-        }
-        return result;
-    }
-
-    // Take in Product, cast it to Fastfood and send to Grill. Return Fastfood instance
-    public Fastfood makeFastfood(Product product){
-        String productName = product.getName();
-        Fastfood resultFood = coffeePoint.getGrill().makeFastfood(productName);
-        return resultFood;
+    // Delegates how to make one instance of product to Product class
+    public Product makeProduct(Product product){
+        return product.make(coffeePoint);
     }
 
     public void setCoffeePoint(CoffeePoint coffeePoint) {

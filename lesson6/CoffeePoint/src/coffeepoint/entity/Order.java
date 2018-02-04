@@ -7,7 +7,7 @@ import java.util.Map;
 
 /* Represents an order*/
 public class Order {
-    private Map<Product, Integer> products;  // Stores types of products and amounts
+    private Map<Product, Integer> products;  // Store types of products and amounts
     private double totalPrice;
     private boolean paid;               // whether customer has paid or not
     private BonusCard bonusCard;        // customer's bonus card

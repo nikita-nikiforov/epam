@@ -2,6 +2,8 @@ import coffeepoint.CoffeePoint;
 import coffeepoint.entity.equipment.grill.Grill;
 import coffeepoint.entity.product.Product;
 import coffeepoint.entity.BonusCard;
+import coffeepoint.entity.product.drink.Drink;
+import coffeepoint.entity.product.drink.menu.Latte;
 import coffeepoint.service.BonusCardService;
 import coffeepoint.entity.Order;
 import coffeepoint.service.ManagementService;
@@ -72,7 +74,12 @@ public class Main {
         // Process order and get my products
         Set<Product> purchasedProducts3 = customerService.processOrder(order3);
 
+
         System.out.println("CoffeePoint earned " + coffeePoint.getCashbox().getMoney()
                         + " dollars!"); // CoffeePoint earned 213.57 dollars!
+
+//        Latte latte = new Latte();
+//        Drink newLatte = latte.make();
+//        System.out.println(newLatte + " " + newLatte.make());
     }
 }

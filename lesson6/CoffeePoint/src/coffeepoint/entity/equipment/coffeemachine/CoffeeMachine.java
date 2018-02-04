@@ -1,6 +1,7 @@
 package coffeepoint.entity.equipment.coffeemachine;
 
 import coffeepoint.entity.equipment.coffeemachine.parts.*;
+import coffeepoint.entity.product.Nameable;
 import coffeepoint.entity.product.drink.Drink;
 import coffeepoint.entity.product.drink.additive.Additively;
 import coffeepoint.entity.product.drink.menu.CustomCoffee;
@@ -105,33 +106,28 @@ public class CoffeeMachine {
             // Add types of Drink the machine can make.
             // Take in names of drinks' classes (i.e. "HotChocolate", "Latte")
             public Builder addDrinkModes(String... names){
-                for(String name : names){
-                    try {
-                        Class<? extends Drink> drinkClass = (Class<? extends Drink>)
-                                Class.forName("coffeepoint.entity.product.drink.menu." + name);
-                        Drink drink = drinkClass.newInstance();
-                        drinkModes.put(drink.getName(), drink);
-                    } catch (ClassNotFoundException e) {
-                        System.out.println("Don't have such drink definition.");
-                        e.printStackTrace();
-                    } catch (Exception e){
-                        e.printStackTrace();
-                    }
-                }
-                return this;
+                return addCommon("coffeepoint.entity.product.drink.menu.", drinkModes, names);
             }
 
             // Add types of Additives the machine can add to CustomCoffee.
             // Take in names of additives' classes (i.e. "Milk", "Cream")
             public Builder addAdditives(String... names){
+                return addCommon("coffeepoint.entity.product.drink.additive.", additives, names);
+            }
+
+            // Generic method for adding modes for CoffeeMachine.
+            // Takes in path to classes of new modes, map where to add them,
+            // and names of modes' classes.
+            private <T extends Nameable> Builder addCommon(String path,
+                                                           Map<String, T> map, String ...names){
                 for(String name : names){
                     try {
-                        Class<? extends Additively> additiveClass = (Class<? extends Additively>)
-                                Class.forName("coffeepoint.entity.product.drink.additive." + name);
-                        Additively additive = additiveClass.newInstance();
-                        additives.put(additive.getName(), additive);
+                        Class<? extends T> elementClass = (Class<? extends T>)
+                                Class.forName(path + name);
+                        T element = elementClass.newInstance();
+                        map.put(element.getName(), element);
                     } catch (ClassNotFoundException e) {
-                        System.out.println("Don't have such drink definition.");
+                        System.out.println("Don't have such element definition.");
                         e.printStackTrace();
                     } catch (Exception e){
                         e.printStackTrace();

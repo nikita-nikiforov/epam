@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.Set;
 
 /* Service for creating an order. Contains OrderBuilder. In turn, OrderBuilder contains
-CustomCoffee builder, which makes coffee with additives (Milk, Chocolate, Cream) */
+ * CustomCoffee builder, which makes coffee with additives (Milk, Chocolate, Cream) */
 public class OrderService {
     private CoffeePoint coffeePoint;
 

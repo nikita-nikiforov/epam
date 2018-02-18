@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="candies"
+           xmlns="candies"
+           elementFormDefault="qualified">
+
+    <xs:element name="candies">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="candy" type="candyType"
+                            maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="candyType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="energy" type="xs:integer"/>
+            <xs:element name="type" type="xs:string"/>
+            <xs:element name="ingredients">
+                <xs:complexType>
+                    <xs:choice maxOccurs="unbounded">
+                        <xs:element name="ingredient" type="xs:string"/>
+                    </xs:choice>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="value">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="proteins" type="xs:integer"/>
+                        <xs:element name="fat" type="xs:integer"/>
+                        <xs:element name="carbohydrates" type="xs:integer"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="manufacturer" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+
+</xs:schema>

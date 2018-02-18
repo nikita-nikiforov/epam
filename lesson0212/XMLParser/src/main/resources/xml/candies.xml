@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<candies xmlns="candies"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="candies.xsd">
+	<candy>
+		<name>Ромашка</name>
+		<energy>150</energy>
+		<type>Шоколадна</type>
+		<ingredients>
+			<ingredient>Шоколад</ingredient>
+			<ingredient>Ромашка</ingredient>
+		</ingredients>
+		<value>
+			<proteins>113</proteins>
+			<fat>46</fat>
+			<carbohydrates>91</carbohydrates>
+		</value>
+		<manufacturer>Рошен</manufacturer>
+	</candy>
+
+	<candy>
+		<name>Ментолова</name>
+		<energy>715</energy>
+		<type>Смоктальна</type>
+		<ingredients>
+			<ingredient>Ментол</ingredient>
+			<ingredient>М'ята</ingredient>
+		</ingredients>
+		<value>
+			<proteins>361</proteins>
+			<fat>71</fat>
+			<carbohydrates>57</carbohydrates>
+		</value>
+		<manufacturer>Рошен</manufacturer>
+	</candy>
+</candies>

@@ -39,7 +39,7 @@ public class SAXHandler extends DefaultHandler {
         else if(qName.equalsIgnoreCase("ingredients")){bIngreds = true;}
         else if(qName.equalsIgnoreCase("ingredient")){bIngred = true;}
         else if(qName.equalsIgnoreCase("value")){bValue = true;}
-        else if(qName.equalsIgnoreCase("proteis")){bProteins = true;}
+        else if(qName.equalsIgnoreCase("proteins")){bProteins = true;}
         else if(qName.equalsIgnoreCase("fat")){bFat = true;}
         else if(qName.equalsIgnoreCase("carbohydrates")){bCarbo = true;}
         else if(qName.equalsIgnoreCase("manufacturer")){bManuf = true;}

@@ -1,16 +1,19 @@
 package parties;
 
 import parties.types.PartyType;
+
+import java.util.HashSet;
+import java.util.Set;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
 
 public class PartyCompany {
     private String name;
-    // TreeSet of party types. TreeSet because we filter using compareTo!
-    private TreeSet<PartyType> partyTypes;
+    // Set of party types
+    private Set<PartyType> partyTypes;
 
     public PartyCompany(String name) {
-        this.partyTypes = new TreeSet<>();
+        this.partyTypes = new HashSet<>();
         this.name = name;
     }
 
@@ -22,11 +25,11 @@ public class PartyCompany {
         this.name = name;
     }
 
-    public TreeSet<PartyType> getPartyTypes() {
+    public Set<PartyType> getPartyTypes() {
         return partyTypes;
     }
 
-    public void setPartyTypes(TreeSet<PartyType> partyTypes) {
+    public void setPartyTypes(Set<PartyType> partyTypes) {
         this.partyTypes = partyTypes;
     }
 
@@ -45,7 +48,7 @@ public class PartyCompany {
         private TreeSet<PartyType> partyTypes;
 
         public SearchService() {
-            this.partyTypes = PartyCompany.this.partyTypes;
+            this.partyTypes = new TreeSet<>(PartyCompany.this.partyTypes);
         }
 
         public SearchService isIndoors(boolean value){
@@ -92,7 +95,7 @@ public class PartyCompany {
         public TreeSet<PartyType> completeSearch(){
             TreeSet<PartyType> result = partyTypes;
             // Get back the initial state of partyTypes in SearchService
-            partyTypes = PartyCompany.this.partyTypes;
+            partyTypes = new TreeSet<>(PartyCompany.this.partyTypes);
             return result;
         }
     }

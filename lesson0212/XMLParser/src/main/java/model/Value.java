@@ -39,7 +39,7 @@ public class Value {
     }
 
     @Override
-    public String toString() {
+    public String   toString() {
         return "Value{" +
                 "proteins=" + proteins +
                 ", fat=" + fat +

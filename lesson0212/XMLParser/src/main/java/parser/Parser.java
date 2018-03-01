@@ -3,6 +3,8 @@ package parser;
 import model.Candy;
 import parser.dom.DOMParserUser;
 import parser.sax.SAXParserUser;
+import parser.stax.StAXReader;
+
 import java.io.File;
 import java.util.List;
 
@@ -20,6 +22,12 @@ public class Parser {
 
         System.out.println("DOM");
         List<Candy> candiesDom = DOMParserUser.parseCandies(xml, xsd);
+        for(Candy candy : candiesDom){
+            System.out.println(candy);
+        }
+
+        System.out.println("STAX");
+        List<Candy> candiesStax = StAXReader.parseCandies(xml, xsd);
         for(Candy candy : candiesDom){
             System.out.println(candy);
         }

@@ -19,8 +19,10 @@ public class Application {
 
             statement = connection.createStatement();
 
-//            readData();
-            updateData();
+            readData();
+//            updateData();
+//            insertData();
+//            deleteData();
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -37,7 +39,9 @@ public class Application {
     }
 
     private static void readData() throws SQLException {
-        // 1. Amount of Products
+        /*
+         * 1. Amount of Products
+         */
         rs = statement.executeQuery("SELECT COUNT(*) FROM user");
 
         while (rs.next()) {
@@ -45,7 +49,9 @@ public class Application {
             System.out.format("\ncount: %d\n", count);
         }
 
-        // 2. Products
+        /*
+         * 2. Products
+         */
         rs = statement.executeQuery("SELECT * FROM lecture");
         System.out.format("\nTable Lecture -----------------------------\n");
         System.out.format("%3s %-15s %-30s\n", "ID", "Name",
@@ -58,7 +64,9 @@ public class Application {
             System.out.format("%3d %-15s %-30s\n", id, name, description);
         }
 
-        // 3. Joining table
+        /*
+         * 3. Joining table
+         */
         String query = "SELECT email, role FROM user U " +
                 "INNER JOIN user_role UR ON user_id=U.id " +
                 "INNER JOIN role R ON R.id=UR.role_id;";
@@ -74,29 +82,66 @@ public class Application {
     }
 
     private static void updateData() throws SQLException {
+        /*
+         * 1. Update Course table
+         */
         Scanner input = new Scanner(System.in);
         System.out.println("Input Course name you'd like to update: ");
-        String course = input.next();
-        System.out.println("Input new Course name for " + course);
-        String courseNew = input.next();
+        String oldCourseName = input.nextLine();
+        System.out.println("Input new Course name for " + oldCourseName);
+        String newCourseName = input.nextLine();
 
 //        statement.execute("UPDATE course SET name='" + courseNew + "' WHERE name='"
 //                + course + "';");
 
         int updatedCourseRows = statement.executeUpdate("UPDATE course SET name='"
-                + courseNew + "' WHERE name='" + course + "';");
+                + newCourseName + "' WHERE name='" + oldCourseName + "';");
         System.out.println("Rows updated: " + updatedCourseRows);
 
+        /*
+         * 2. Update Lecture table
+         */
         System.out.println("Input Lecture name you'd like to update: ");
-        String lecture = input.next();
-        System.out.println("Input new name for Lecture " + lecture);
-        String lectureNew = input.nextLine();
+        String oldLectureName = input.nextLine();
+        System.out.println("Input new name for Lecture " + oldLectureName);
+        String newLectureName = input.nextLine();
         PreparedStatement preparedStatement = connection
                 .prepareStatement("UPDATE lecture SET name=? WHERE name=?;");
-        preparedStatement.setString(1, lectureNew);
-        preparedStatement.setString(2, lecture);
+        preparedStatement.setString(1, newLectureName);
+        preparedStatement.setString(2, oldLectureName);
         int updatedLectureRows = preparedStatement.executeUpdate();
         System.out.println("Rows updated: " + updatedLectureRows);
+    }
 
+    private static void insertData() throws SQLException {
+        /*
+         * Insert into Course
+         */
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input the name of new Course: ");
+        String newCourseName = input.nextLine();
+
+        PreparedStatement preparedStatement = connection
+                .prepareStatement("INSERT INTO course (name, description) VALUES (?, ?)",
+                        Statement.RETURN_GENERATED_KEYS);
+        preparedStatement.setString(1, newCourseName);
+        preparedStatement.setString(2, "Description");
+        int insertedRowsAmount = preparedStatement.executeUpdate();
+        System.out.println("Rows inserted: " + insertedRowsAmount);
+    }
+
+    private static void deleteData() throws SQLException {
+        /*
+         * Delete from Course
+         */
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input the name of course to delete: ");
+        String courseToDeleteName = input.nextLine();
+
+        PreparedStatement preparedStatement = connection
+                .prepareStatement("DELETE FROM course WHERE name=?");
+        preparedStatement.setString(1, courseToDeleteName);
+        int rowsDeleted = preparedStatement.executeUpdate();
+        System.out.println(rowsDeleted);
     }
 }

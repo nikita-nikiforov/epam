@@ -26,25 +26,26 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="93" column="21" lean-forward="false" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
+            <state relative-caret-position="396">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1520189933127" expanded="true" signature="1399:1420" ph="SELECT COUNT... Product" />
-                <marker date="1520189933127" expanded="true" signature="1399:1424" ph="SELECT COUNT... user" />
-                <marker date="1520189933127" expanded="true" signature="1621:1635" ph="SELECT * FRO... Product" />
-                <marker date="1520189933127" expanded="true" signature="1621:1642" ph="SELECT * FRO... lecture" />
-                <marker date="1520189933127" expanded="true" signature="2132:2139" ph="SELECT (SELE... user" />
-                <marker date="1520189933127" expanded="true" signature="2132:2281" ph="SELECT email... user" />
-                <marker date="1520189933127" expanded="true" signature="2132:2282" ph="SELECT (SELE... user_role" />
-                <marker date="1520189933127" expanded="true" signature="3018:3042" ph="UPDATE cours... " />
-                <marker date="1520189933127" expanded="true" signature="3018:3073" ph="UPDATE cours... " />
-                <marker date="1520189933127" expanded="true" signature="3018:3106" ph="UPDATE cours... " />
-                <marker date="1520189933127" expanded="true" signature="3169:3193" ph="UPDATE cours... " />
-                <marker date="1520189933127" expanded="true" signature="3169:3240" ph="UPDATE cours... " />
-                <marker date="1520189933127" expanded="true" signature="3169:3255" ph="UPDATE cours... " />
-                <marker date="1520189933127" expanded="true" signature="3646:3670" ph="UPDATE lectu... " />
-                <marker date="1520189933127" expanded="true" signature="3646:3684" ph="UPDATE lectu... " />
+                <marker date="1520362339619" expanded="true" signature="1478:1499" ph="SELECT COUNT... Product" />
+                <marker date="1520362339619" expanded="true" signature="1478:1503" ph="SELECT COUNT... user" />
+                <marker date="1520362339619" expanded="true" signature="1723:1744" ph="SELECT * FRO... lecture" />
+                <marker date="1520362339619" expanded="true" signature="2257:2264" ph="SELECT (SELE... user" />
+                <marker date="1520362339619" expanded="true" signature="2257:2406" ph="SELECT email... user" />
+                <marker date="1520362339619" expanded="true" signature="2257:2407" ph="SELECT (SELE... user_role" />
+                <marker date="1520362339619" expanded="true" signature="3226:3250" ph="UPDATE cours... " />
+                <marker date="1520362339619" expanded="true" signature="3226:3281" ph="UPDATE cours... " />
+                <marker date="1520362339619" expanded="true" signature="3226:3314" ph="UPDATE cours... " />
+                <marker date="1520362339619" expanded="true" signature="3377:3401" ph="UPDATE cours... " />
+                <marker date="1520362339619" expanded="true" signature="3377:3452" ph="UPDATE cours... " />
+                <marker date="1520362339619" expanded="true" signature="3377:3474" ph="UPDATE cours... " />
+                <marker date="1520362339619" expanded="true" signature="3945:3969" ph="UPDATE lectu... " />
+                <marker date="1520362339619" expanded="true" signature="3945:3983" ph="UPDATE lectu... " />
+                <marker date="1520362339619" expanded="true" signature="4606:4658" ph="INSERT INTO course... " />
+                <marker date="1520362339619" expanded="true" signature="5347:5378" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -87,7 +88,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="y" value="396" />
     <option name="width" value="1301" />
     <option name="height" value="372" />
   </component>
@@ -106,8 +107,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,6 +129,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -137,6 +138,7 @@
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../1_JDBCtest" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -262,33 +264,35 @@
       <updated>1520186002352</updated>
       <workItem from="1520186005033" duration="4576000" />
       <workItem from="1520260119971" duration="70000" />
+      <workItem from="1520359937486" duration="2399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4646000" />
+    <option name="totallyTimeSpent" value="7045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3102041" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62945735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6839546" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25338647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26580226" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31937984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -303,7 +307,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -321,21 +327,56 @@
           <caret line="93" column="21" lean-forward="false" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1520189933127" expanded="true" signature="1399:1420" ph="SELECT COUNT... Product" />
-            <marker date="1520189933127" expanded="true" signature="1399:1424" ph="SELECT COUNT... user" />
-            <marker date="1520189933127" expanded="true" signature="1621:1635" ph="SELECT * FRO... Product" />
-            <marker date="1520189933127" expanded="true" signature="1621:1642" ph="SELECT * FRO... lecture" />
-            <marker date="1520189933127" expanded="true" signature="2132:2139" ph="SELECT (SELE... user" />
-            <marker date="1520189933127" expanded="true" signature="2132:2281" ph="SELECT email... user" />
-            <marker date="1520189933127" expanded="true" signature="2132:2282" ph="SELECT (SELE... user_role" />
-            <marker date="1520189933127" expanded="true" signature="3018:3042" ph="UPDATE cours... " />
-            <marker date="1520189933127" expanded="true" signature="3018:3073" ph="UPDATE cours... " />
-            <marker date="1520189933127" expanded="true" signature="3018:3106" ph="UPDATE cours... " />
-            <marker date="1520189933127" expanded="true" signature="3169:3193" ph="UPDATE cours... " />
-            <marker date="1520189933127" expanded="true" signature="3169:3240" ph="UPDATE cours... " />
-            <marker date="1520189933127" expanded="true" signature="3169:3255" ph="UPDATE cours... " />
-            <marker date="1520189933127" expanded="true" signature="3646:3670" ph="UPDATE lectu... " />
-            <marker date="1520189933127" expanded="true" signature="3646:3684" ph="UPDATE lectu... " />
+            <marker date="1520362339619" expanded="true" signature="1478:1499" ph="SELECT COUNT... Product" />
+            <marker date="1520362339619" expanded="true" signature="1478:1503" ph="SELECT COUNT... user" />
+            <marker date="1520362339619" expanded="true" signature="1723:1744" ph="SELECT * FRO... lecture" />
+            <marker date="1520362339619" expanded="true" signature="2257:2264" ph="SELECT (SELE... user" />
+            <marker date="1520362339619" expanded="true" signature="2257:2406" ph="SELECT email... user" />
+            <marker date="1520362339619" expanded="true" signature="2257:2407" ph="SELECT (SELE... user_role" />
+            <marker date="1520362339619" expanded="true" signature="3226:3250" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3226:3281" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3226:3314" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3377:3401" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3377:3452" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3377:3474" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3945:3969" ph="UPDATE lectu... " />
+            <marker date="1520362339619" expanded="true" signature="3945:3983" ph="UPDATE lectu... " />
+            <marker date="1520362339619" expanded="true" signature="4606:4658" ph="INSERT INTO course... " />
+            <marker date="1520362339619" expanded="true" signature="5347:5378" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="93" column="21" lean-forward="false" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1520362339619" expanded="true" signature="1478:1499" ph="SELECT COUNT... Product" />
+            <marker date="1520362339619" expanded="true" signature="1478:1503" ph="SELECT COUNT... user" />
+            <marker date="1520362339619" expanded="true" signature="1723:1744" ph="SELECT * FRO... lecture" />
+            <marker date="1520362339619" expanded="true" signature="2257:2264" ph="SELECT (SELE... user" />
+            <marker date="1520362339619" expanded="true" signature="2257:2406" ph="SELECT email... user" />
+            <marker date="1520362339619" expanded="true" signature="2257:2407" ph="SELECT (SELE... user_role" />
+            <marker date="1520362339619" expanded="true" signature="3226:3250" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3226:3281" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3226:3314" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3377:3401" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3377:3452" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3377:3474" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3945:3969" ph="UPDATE lectu... " />
+            <marker date="1520362339619" expanded="true" signature="3945:3983" ph="UPDATE lectu... " />
+            <marker date="1520362339619" expanded="true" signature="4606:4658" ph="INSERT INTO course... " />
+            <marker date="1520362339619" expanded="true" signature="5347:5378" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -357,25 +398,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="93" column="21" lean-forward="false" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
+        <state relative-caret-position="396">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1520189933127" expanded="true" signature="1399:1420" ph="SELECT COUNT... Product" />
-            <marker date="1520189933127" expanded="true" signature="1399:1424" ph="SELECT COUNT... user" />
-            <marker date="1520189933127" expanded="true" signature="1621:1635" ph="SELECT * FRO... Product" />
-            <marker date="1520189933127" expanded="true" signature="1621:1642" ph="SELECT * FRO... lecture" />
-            <marker date="1520189933127" expanded="true" signature="2132:2139" ph="SELECT (SELE... user" />
-            <marker date="1520189933127" expanded="true" signature="2132:2281" ph="SELECT email... user" />
-            <marker date="1520189933127" expanded="true" signature="2132:2282" ph="SELECT (SELE... user_role" />
-            <marker date="1520189933127" expanded="true" signature="3018:3042" ph="UPDATE cours... " />
-            <marker date="1520189933127" expanded="true" signature="3018:3073" ph="UPDATE cours... " />
-            <marker date="1520189933127" expanded="true" signature="3018:3106" ph="UPDATE cours... " />
-            <marker date="1520189933127" expanded="true" signature="3169:3193" ph="UPDATE cours... " />
-            <marker date="1520189933127" expanded="true" signature="3169:3240" ph="UPDATE cours... " />
-            <marker date="1520189933127" expanded="true" signature="3169:3255" ph="UPDATE cours... " />
-            <marker date="1520189933127" expanded="true" signature="3646:3670" ph="UPDATE lectu... " />
-            <marker date="1520189933127" expanded="true" signature="3646:3684" ph="UPDATE lectu... " />
+            <marker date="1520362339619" expanded="true" signature="1478:1499" ph="SELECT COUNT... Product" />
+            <marker date="1520362339619" expanded="true" signature="1478:1503" ph="SELECT COUNT... user" />
+            <marker date="1520362339619" expanded="true" signature="1723:1744" ph="SELECT * FRO... lecture" />
+            <marker date="1520362339619" expanded="true" signature="2257:2264" ph="SELECT (SELE... user" />
+            <marker date="1520362339619" expanded="true" signature="2257:2406" ph="SELECT email... user" />
+            <marker date="1520362339619" expanded="true" signature="2257:2407" ph="SELECT (SELE... user_role" />
+            <marker date="1520362339619" expanded="true" signature="3226:3250" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3226:3281" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3226:3314" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3377:3401" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3377:3452" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3377:3474" ph="UPDATE cours... " />
+            <marker date="1520362339619" expanded="true" signature="3945:3969" ph="UPDATE lectu... " />
+            <marker date="1520362339619" expanded="true" signature="3945:3983" ph="UPDATE lectu... " />
+            <marker date="1520362339619" expanded="true" signature="4606:4658" ph="INSERT INTO course... " />
+            <marker date="1520362339619" expanded="true" signature="5347:5378" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
